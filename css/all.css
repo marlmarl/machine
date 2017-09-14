@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: "INGMe";
     src: url("../fonts/INGMe-Regular.otf");
     font-weight: normal
@@ -26,14 +26,14 @@
     font-weight: bold;
     font-style: italic
 }
-
-@font-face {
+*/
+/*@font-face {
     font-family: "ing-icons";
     src: url("../Fonts/ing-icons-v4-5.woff") format("woff");
     font-weight: normal;
     font-style: normal
 }
-
+*/
 * {
     box-sizing: border-box
 }
