@@ -1,20 +1,20 @@
-/*@font-face {
+@font-face {
     font-family: "INGMe";
-    src: url("../fonts/INGMe-Regular.otf");
+    src: url("../fonts/INGMe-Regular.otf") format("opentype");
     font-weight: normal
 }
 
 @font-face {
     font-family: "INGMe";
     src: url("../fonts/INGMe-Bold.otf");
-    src: url("../fonts/INGMe-Bold.otf") format("otf");
+    src: url("../fonts/INGMe-Bold.otf") format("opentype");
     font-weight: bold
 }
 
 @font-face {
     font-family: "INGMe";
     src: url("../fonts/INGMe-Italic.otf");
-    src: url("../fonts/INGMe-Italic.otf") format("otf");
+    src: url("../fonts/INGMe-Italic.otf") format("opentype");
     font-weight: normal;
     font-style: italic
 }
@@ -22,11 +22,11 @@
 @font-face {
     font-family: "INGMe";
     src: url("../fonts/INGMe-BoldItalic.otf");
-    src: url("../fonts/INGMe-BoldItalic.otf") format("otf");
+    src: url("../fonts/INGMe-BoldItalic.otf") format("opentype");
     font-weight: bold;
     font-style: italic
 }
-*/
+
 /*@font-face {
     font-family: "ing-icons";
     src: url("../Fonts/ing-icons-v4-5.woff") format("woff");
