@@ -1,4 +1,6 @@
 .iframe-container {
+   background-color: yellow;
+   height: 100%;
 
 }
 
@@ -11,6 +13,7 @@
 .facts {
    width:50%;
    height: 100%;
+   background-color: pink;
 
 }
 .infograpic-text {
@@ -44,12 +47,18 @@
 
 }
 .machine-container {
+   background-color: lightgrey;
    position: relative;
    top:0;
    left:0;
-   width:50%;;
-   height: 500px;
+   width:50%;
 }
+
+.machine {
+   background-color: blue;
+   margin:0 auto;
+   max-width:324px;
+ }
 
 .machine-layer {
    position: absolute;
@@ -60,6 +69,7 @@
    background-position: center;
    height: 100%;
    width:100%;
+   max-width:324px;
 }
 
 .machine-part {
@@ -68,17 +78,21 @@
    background-repeat: no-repeat;
    background-position: center;
 }
+.imgdummy {
+width:100%;
+max-width:324px;
+}
 
-.machine {
+/*.machine-body {
    background-image: url('../img/machine.png');
    pointer-events: none;
-}
+}*/
 
 /*.biggear1 {
    background-image: url('../img/biggear1.png');
 }*/
 
-.biggear {
+/*.biggear {
    top:44%;
    left:47%;
    height:30%;
@@ -161,7 +175,7 @@
    top:-1%;
 
 }
-
+*/
 
 
 
