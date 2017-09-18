@@ -1,17 +1,10 @@
 body {
-   width:850px;
+   max-width:850px;
    height:100%;
-   background-color:yellow;
-
-   
+   border:1px solid #FF6200;
+   color: #333333; /*ING web black*/
 }
 
-
-/*iframe-container {
-   background-color: yellow;
-   height: 100%;
-
-}
 
 .flex-container {
    display:flex;
@@ -61,18 +54,96 @@ body {
    top:0;
    left:0;
    width:50%;
+
 }
 
 .machine {
-   background-color: blue;
+   position:relative;
+   border:1px solid red;
+   max-width:270px;
    margin:0 auto;
-   max-width:324px;
- }
+}
 
-.machine-layer {
+
+/*------MACHINE-----*/
+
+
+.machine-dummy {
+visibility: visible;
+}
+
+.dummy {
+   width: 100%;
+   height: auto;
+}
+
+.machine-body {
    position: absolute;
    top:0;
    left:0;
+/*   background-image: url("../img/MachineNoTopTap.png");*/
+   background-repeat: no-repeat;
+   width:100%;
+   height: 100%;
+}
+
+.tap {
+   position:absolute;
+   top:0;
+   left:6%;
+   background-repeat: no-repeat;
+   width:100%;
+   height: 100%;
+   background-image:  url("../img/RedValve.png");
+}
+
+.tap1 {
+   top:18.5%;
+}
+
+.tap2 {
+   top:26.5%;
+}
+
+.tap3 {
+   top:34.7%;
+
+}
+.tap4 {
+   top:43.5%;
+
+}
+
+
+/*keyframes*/
+
+/*@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/*
+.machine-layer {
+
    background-size:contain;
    background-repeat: no-repeat;
    background-position: center;
@@ -86,10 +157,6 @@ body {
    background-size:contain;
    background-repeat: no-repeat;
    background-position: center;
-}
-.imgdummy {
-width:100%;
-max-width:324px;
 }
 
 /*.machine-body {
@@ -139,12 +206,7 @@ max-width:324px;
     pointer-events: none;
 }
 
-.tap {
-   background-image:  url('../img/tap.png');
-   height:10%;
-   width:10%;
-   left:25%;
-}
+
 
 .tap:hover {
    animation-name: rotate;
@@ -154,27 +216,7 @@ max-width:324px;
 
 }
 
-.tap1 {
-   top:17%;
-}
-.tap2 {
-   top:26%;
-}
-.tap3 {
-   top:34%;
-}
 
-.tap4 {
-   top:43%;
-}
-
-.tap5 {
-   top:52%;
-}
-
-.tap6 {
-   top:60%;
-}
 
 .top-tap {
    background-image:  url('../img/top-tap.png');
@@ -185,31 +227,3 @@ max-width:324px;
 
 }
 */
-
-
-
-
-/*keyframes*/
-
-/*@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-*/*/
