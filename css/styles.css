@@ -1,4 +1,10 @@
-.iframe-container {
+body {
+   width:850px;
+   height:100%;
+}
+
+
+/*iframe-container {
    background-color: yellow;
    height: 100%;
 
@@ -182,7 +188,7 @@ max-width:324px;
 
 /*keyframes*/
 
-@-webkit-keyframes rotate {
+/*@-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -203,3 +209,4 @@ max-width:324px;
     transform: rotate(360deg);
   }
 }
+*/*/
