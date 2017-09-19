@@ -53,6 +53,26 @@ h3 {
     font-style: normal;
 }
 
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: inherit;
+  display: inline;
+}
+
+/*button:active,
+button:focus,
+button:hover {
+  color: #03678B;
+  text-decoration: underline;
+}
+*/
+
 .flex-container {
    display:flex;
    flex-direction:row;
@@ -76,6 +96,9 @@ h3 {
    text-transform: uppercase
 }
 .infographic-title{
+      font-size: 3em;
+      margin: 0 0 .25em;
+      line-height: 1.20833em
 
 }
 .infographic-subtitle{
@@ -118,8 +141,9 @@ h3 {
 .machine {
    position:relative;
    border:1px dashed blue;
-   margin:0 auto;
    max-width: 254px;
+   margin-right:5%;
+   margin-left:auto;
 }
 
 .machine-body {
@@ -151,7 +175,6 @@ h3 {
 }
 
 .top-valve {
-   visibility:hidden;
    position:absolute;
    top:1%;
    left:39%;
