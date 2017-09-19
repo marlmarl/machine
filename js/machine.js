@@ -10,6 +10,7 @@ $(document).ready(function() {
 
 });
 
+
 function load(){
   if(loading){
     setTimeout(load, 100);
