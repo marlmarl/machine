@@ -117,6 +117,7 @@ button:hover {
 .infographic-fact {
    /*border:1px dashed grey;*/
    margin:10% 0;
+   display:none;
 
 }
 .machine-container {
