@@ -1,10 +1,57 @@
+@font-face {
+    font-family: "INGMe";
+    src: url("../fonts/INGMe-Regular.otf") format("opentype");
+    font-weight: normal
+}
+
+@font-face {
+    font-family: "INGMe";
+    src: url("../fonts/INGMe-Bold.otf");
+    src: url("../fonts/INGMe-Bold.otf") format("opentype");
+    font-weight: bold
+}
+
+@font-face {
+    font-family: "INGMe";
+    src: url("../fonts/INGMe-Italic.otf");
+    src: url("../fonts/INGMe-Italic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "INGMe";
+    src: url("../fonts/INGMe-BoldItalic.otf");
+    src: url("../fonts/INGMe-BoldItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic
+}
+
+html {
+    font-size: 15px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility
+}
+
 body {
    max-width:850px;
    height:100%;
    border:1px solid #FF6200;
+   margin: 0;
+   font-family:INGMe, Arial;
+   font-weight: normal;
    color: #333333; /*ING web black*/
 }
 
+h1,
+h2,
+h3 {
+    font-family: INGMe, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
 
 .flex-container {
    display:flex;
@@ -54,75 +101,107 @@ body {
    top:0;
    left:0;
    width:50%;
+}
 
+#canvas {
+   visibility: hidden;
+   position:absolute;
+   border:1px solid red;
+   width:100%;
+   height:16%;
+}
+
+#smokeparticle {
+   display:none;
 }
 
 .machine {
    position:relative;
-   border:1px solid red;
-   max-width:270px;
+   border:1px solid blue;
    margin:0 auto;
+   max-width: 254px;
 }
 
+.machine-body {
+   border 1px solid orange;
+   max-width: 254px;
+   width: 100%;
+}
 
 /*------MACHINE-----*/
 
 
-.machine-dummy {
-visibility: visible;
-}
-
-.dummy {
-   width: 100%;
-   height: auto;
-}
-
-.machine-body {
-   position: absolute;
-   top:0;
-   left:0;
-/*   background-image: url("../img/MachineNoTopTap.png");*/
-   background-repeat: no-repeat;
-   width:100%;
-   height: 100%;
-}
-
-.tap {
-   position:absolute;
-   top:0;
-   left:6%;
-/*   background-repeat: no-repeat;
-   width:10%;
-   height: auto;
-   background-image:  url("../img/RedValve.png");*/
-}
-
 .part {
    width:100%;
-   height:auto;
+   height:100%;
+}
+.machine-body-img {
+   border:1px solid yellow;
+   margin:0 auto;
+   display: block;
+   width: 100%;
 }
 
-.tap1 {
-   top:18.5%;
+.valve {
+   position:absolute;
+   top:0;
+   left:7%;
+   width:14.5%;
+   height: auto;
 }
 
-.tap2 {
-   top:26.5%;
+.top-valve {
+   position:absolute;
+   top:1%;
+   left:39%;
+   width:21%;
+   height: auto;
 }
 
-.tap3 {
-   top:34.7%;
+.big-gear {
+   position:absolute;
+   top:1%;
+   left:39%;
+   width:52%;
+   height: auto;
+}
+.big-gear-image {
+}
+
+.valve img:hover {
+   animation-name: rotate;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear;
 
 }
-.tap4 {
-   top:43.5%;
 
+.valve1 {
+   top:19%;
 }
 
+.valve2 {
+   top:27%;
+}
+
+.valve3 {
+   top:35%;
+}
+.valve4 {
+   top:44%;
+}
+
+.valve5 {
+   top:52.7%;
+}
+
+.valve6 {
+   top:60%;
+}
 
 /*keyframes*/
 
-/*@-webkit-keyframes rotate {
+@-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -143,92 +222,3 @@ visibility: visible;
     transform: rotate(360deg);
   }
 }
-
-
-
-/*
-.machine-layer {
-
-   background-size:contain;
-   background-repeat: no-repeat;
-   background-position: center;
-   height: 100%;
-   width:100%;
-   max-width:324px;
-}
-
-.machine-part {
-   position: absolute;
-   background-size:contain;
-   background-repeat: no-repeat;
-   background-position: center;
-}
-
-/*.machine-body {
-   background-image: url('../img/machine.png');
-   pointer-events: none;
-}*/
-
-/*.biggear1 {
-   background-image: url('../img/biggear1.png');
-}*/
-
-/*.biggear {
-   top:44%;
-   left:47%;
-   height:30%;
-   width:30%;
-   background-image: url('../img/biggear.png');
-   animation-name: rotate;
-   animation-direction: reverse;
-   animation-duration: 20s;
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
-}
-
-
-.smallgear {
-   background-image: url('../img/smallgear.png');
-   top:26%;
-   left:47%;
-   height:24%;
-   width:24%;
-   animation-name: rotate;
-   animation-duration: 10s;
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
-}
-
-.biggear:hover {
-   animation-direction:reverse;
-}
-.smallgear:hover {
-   animation-direction:reverse;
-}
-
-.screen {
-   background-image: url('../img/screen.png');
-    pointer-events: none;
-}
-
-
-
-.tap:hover {
-   animation-name: rotate;
-   animation-duration: 1s;
-   animation-iteration-count: 1;
-   animation-timing-function:ease-in-out;
-
-}
-
-
-
-.top-tap {
-   background-image:  url('../img/top-tap.png');
-   height:12%;
-   width:12%;
-   left:42.5%;
-   top:-1%;
-
-}
-*/
