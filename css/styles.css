@@ -74,7 +74,7 @@ button:hover {
 }
 
 
-.flex-container {
+.infographic-container {
    display:flex;
    flex-direction:row;
    align-items: stretch;
@@ -152,6 +152,25 @@ button:hover {
    max-width: 254px;
    width: 100%;
 }
+
+@media screen and (max-width:768px) {
+   .infographic-container {
+      display:block;
+   }
+
+   .facts {
+      display:none;
+   }
+
+   .machine-container {
+      width:100%;
+   }
+
+   .machine {
+      margin:0 auto;
+   }
+}
+
 
 /*------MACHINE-----*/
 
