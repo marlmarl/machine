@@ -66,13 +66,13 @@ button {
 }
 
 
-/*button:active,
+button:active,
 button:focus,
 button:hover {
   color: #03678B;
   text-decoration: underline;
 }
-*/
+
 
 .flex-container {
    display:flex;
