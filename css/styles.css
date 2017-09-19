@@ -171,17 +171,20 @@ button:hover {
    .infographic-chapeau{
       margin: 0 0 0 0;
       font-size: 0.9em;
+      display:none;
    }
    .infographic-title{
          font-size: 2em;
          margin: 0 0 0;
          line-height: 1em;
          margin-bottom:0.1em;
+         display:none;
 
    }
    .infographic-subtitle{
       font-size: 1em;
       margin:0;
+      display:none;
 
    }
 
@@ -193,8 +196,8 @@ button:hover {
    }
    .infographic-fact {
       border:1px dashed grey;
-      margin:10% 0;
-      display:none;
+   
+
 
    }
 
