@@ -154,60 +154,50 @@ button:hover {
 }
 
 @media screen and (max-width:768px) {
+
    .infographic-container {
-      display:block;
-   }
+         flex-direction: column;
+      }
 
-   .facts {
-      position:absolute;
-      width:100%
-   }
+      .facts {
+         width:100%
+      }
 
-   .infograpic-text {
+      .machine-container {
+         width:100%;
+      }
 
-      margin:0 5% 10% 5%;
-   }
+      .infographic-fact {
+         display:none;
+      }
 
-   .infographic-chapeau{
-      margin: 0 0 0 0;
-      font-size: 0.9em;
-      display:none;
-   }
-   .infographic-title{
+      .machine {
+         margin:0 auto;;
+      }
+
+      .infograpic-text {
+
+         margin:0 5%;
+      }
+
+      .infographic-chapeau{
+         margin:0;
+         font-size: 0.9em;
+      }
+
+      .infographic-title{
          font-size: 2em;
-         margin: 0 0 0;
+         margin:0;
          line-height: 1em;
          margin-bottom:0.1em;
-         display:none;
-
-   }
-   .infographic-subtitle{
-      font-size: 1em;
-      margin:0;
-      display:none;
-
-   }
-
-   .fact-number {
-      color:#ff7700;
-      font-weight:normal;
-      text-align: center;
-      display: none;
-   }
-   .infographic-fact {
-      border:1px dashed grey;
-   
+      }
 
 
-   }
 
-   .machine-container {
-      width:100%;
-   }
-
-   .machine {
-      margin:15% auto 0 auto;
-   }
+      .infographic-subtitle{
+         font-size: 1em;
+         margin:0;
+      }
 }
 
 
