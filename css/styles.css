@@ -38,7 +38,7 @@ html {
 body {
    max-width:850px;
    height:100%;
-   border:1px solid #FF6200;
+   border:1px dashed #FF6200;
    margin: 0;
    font-family:INGMe, Arial;
    font-weight: normal;
@@ -62,12 +62,10 @@ h3 {
 .facts {
    width:50%;
    height: 100%;
-   background-color: pink;
-
 }
 .infograpic-text {
-   margin-top:10%;
-   margin-left:10%;
+
+   margin:10% 5% 10% 5%;
 }
 .infographic-chapeau{
    margin: 0 0 1em 0;
@@ -90,13 +88,15 @@ h3 {
    color:#ff7700;
    font-weight:normal;
    text-align: center;
+   display: none;
 }
 .infographic-fact {
-
+   border:1px dashed grey;
+   margin:10% 0;
 
 }
 .machine-container {
-   background-color: lightgrey;
+   border: 1px dashed purple;
    position: relative;
    top:0;
    left:0;
@@ -104,9 +104,9 @@ h3 {
 }
 
 #canvas {
-   visibility: hidden;
+   /*visibility: hidden;*/
    position:absolute;
-   border:1px solid red;
+   border:1px dashed red;
    width:100%;
    height:16%;
 }
@@ -117,13 +117,13 @@ h3 {
 
 .machine {
    position:relative;
-   border:1px solid blue;
+   border:1px dashed blue;
    margin:0 auto;
    max-width: 254px;
 }
 
 .machine-body {
-   border 1px solid orange;
+   border 1px dashed orange;
    max-width: 254px;
    width: 100%;
 }
@@ -136,7 +136,7 @@ h3 {
    height:100%;
 }
 .machine-body-img {
-   border:1px solid yellow;
+   border:1px dashed yellow;
    margin:0 auto;
    display: block;
    width: 100%;
@@ -151,6 +151,7 @@ h3 {
 }
 
 .top-valve {
+   visibility:hidden;
    position:absolute;
    top:1%;
    left:39%;
@@ -158,14 +159,73 @@ h3 {
    height: auto;
 }
 
+.indicator {
+   position:absolute;
+   top:29.9%;
+   width:15%;
+}
+
+.indicator1 {
+   left:34.7%;
+}
+.indicator2 {
+   left:50%;
+}
+
+.indicator1-img {
+   animation-name: rotate;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear;
+   animation-direction: reverse;
+}
+
+.belly {
+   position:absolute;
+   top:45%;
+   left:30%;
+   width:45%;
+   z-index: -1;
+}
+
+.touch {
+   position:absolute;
+   top:43%;
+   left:30%;
+   width:44.5%;
+}
+
 .big-gear {
    position:absolute;
-   top:1%;
-   left:39%;
+   top:46%;
+   left:47%;
    width:52%;
    height: auto;
+   z-index: -2;
+
 }
-.big-gear-image {
+
+.small-gear {
+   position:absolute;
+   top:29%;
+   left:46%;
+   width:42.5%;
+   height: auto;
+   z-index: -2;
+}
+
+.big-gear-img {
+   animation-name: rotate;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear;
+   animation-direction: reverse;
+}
+.small-gear-img {
+   animation-name: rotate;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear;
 }
 
 .valve img:hover {

@@ -18,9 +18,9 @@ canvas.height =  document.getElementById("canvas").offsetHeight;
 canvas.width = document.getElementById("canvas").offsetWidth;
 console.log(canvas.height);
 var parts = [],
-    minSpawnTime = 20,
+    minSpawnTime = 40,
     lastTime = new Date().getTime(),
-    maxLifeTime = canvas.height / (50) * 1000,
+    maxLifeTime = canvas.height / (1.5 * 60) * 1000,
     emitterX = canvas.width / 2,
     emitterY = canvas.height,
     smokeImage = new Image();
@@ -68,7 +68,7 @@ function smoke(x, y, index) {
   this.y = y;
   this.size = 1;
   this.startSize = 32;
-  this.endSize = 42;
+  this.endSize = 40;
 
   this.angle = Math.random() * 359;
 
@@ -76,7 +76,7 @@ function smoke(x, y, index) {
   this.lifeTime = 0;
 
   this.velY = -1 - (Math.random() * 0.5);
-  this.velX = Math.floor(Math.random() * (-6) + 3) /2;
+  this.velX = Math.floor(Math.random() * (-6) + 3) / 5;
 }
 
 smoke.prototype.update = function () {
@@ -92,6 +92,7 @@ smoke.prototype.update = function () {
 
   this.x += this.velX ;
   this.y += this.velY;
+//console.log(((this.endSize - this.startSize) * lifePerc * .1));
 }
 
 smokeImage.src = document.getElementById("smokeparticle").src;
@@ -118,7 +119,4 @@ window.onload = resizeMe;
 function resizeMe() {
   canvas.height =  document.getElementById("canvas").offsetHeight;
   canvas.width = document.getElementById("canvas").offsetWidth;
-    maxLifeTime = canvas.height / (50) * 1000;
-    emitterX = canvas.width / 2;
-    emitterY = canvas.height;
 }
