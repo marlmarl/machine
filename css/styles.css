@@ -81,19 +81,23 @@ button:hover {
    color:#FF6200;
 }
 
+/*cała ramka*/
 .infographic-container {
    display:flex;
    flex-direction:row;
    align-items: stretch;
+   border: 1px solid red;
 }
 
-.facts {
+.text-container {
    width:60%;
    height: 100%;
+   border:1px solid yellow;
 }
-.infograpic-text {
+.article {
 
    margin:10% 5% 10% 5%;
+   border:1px solid green;
 }
 .infographic-chapeau{
    margin: 0 0 1em 0;
@@ -115,17 +119,16 @@ button:hover {
    font-weight: normal;
 }
 
-.fact-number {
-   color:#ff6200;
-   font-weight:normal;
-   text-align: center;
-   display: none;
-}
-.infographic-fact {
-   /*border:1px dashed grey;*/
+
+.single-fact {
+   border:1px dashed grey;
    margin:10% 0;
    display:none;
 
+}
+
+.fact1 {
+   display:block;
 }
 .machine-container {
    /*border: 1px dashed purple;*/
@@ -164,11 +167,11 @@ button:hover {
 
 @media screen and (max-width:768px) {
 
-   .infographic-container {
+      .infographic-container {
          flex-direction: column;
       }
 
-      .facts {
+      .text-container {
          width:100%
       }
 
@@ -176,15 +179,33 @@ button:hover {
          width:100%;
       }
 
-      .infographic-fact {
-         display:none;
+      .facts {
+         position: fixed;
+         display:flex;
+         justify-content: center;
+         align-items: center;
+         top: 0;
+         right: 0;
+         left: 0;
+         bottom: 0;
+         background-color: rgba(0, 0, 0, 0.7);
+         z-index: 1000;
+      }
+
+      .single-fact {
+         margin:0 auto;
+         background-color: rgba(255, 255, 255, 0.7);
+      }
+
+      .fact-content {
+         margin:10%;
       }
 
       .machine {
          margin:0 auto;;
       }
 
-      .infograpic-text {
+      .article {
 
          margin:0 5%;
       }
@@ -269,12 +290,8 @@ button:hover {
    z-index: -1;
 }
 
-.touch {
-   position:absolute;
-   top:43%;
-   left:30%;
-   width:44.5%;
-}
+
+
 
 .screen {
    position:absolute;
@@ -282,11 +299,19 @@ button:hover {
    left:30%;
    width:44%;
    height:15%;
-/*   background-color:yellow;*/
    z-index: -1;
 
 }
-.screen h4{
+
+.screen-mobile {
+   width:44%;
+   height:15%;
+   display:none;
+}
+
+
+.screen-mobile h4,
+.screen h4 {
    color:#333333;
    font-size:85%;
    line-height: 85%;
@@ -298,12 +323,17 @@ button:hover {
 }
 
 
+.fact-screen img,
 .screen img {
    margin:0 16%;
    position:absolute;
    top:-5%;
    left:-20%;
    z-index:-1;
+}
+
+.fact1-screen {
+   display:block;
 }
 
 .start-screen {
