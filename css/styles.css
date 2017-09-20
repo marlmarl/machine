@@ -279,22 +279,28 @@ button:hover {
    width:43%;
    height:13%;
    /*border:1px solid blue;*/
-   
+
 }
 .screen h4{
    color:#ff6200;
    font-size:85%;
    line-height: 85%;
-   text-transform: uppercase;
    letter-spacing: .1em;
    text-align: center;
+   font-weight: normal;
    margin:0;
+   margin-top:10%;
 }
 
 
 .screen img {
-   height:65%;
    margin:0 16%;
+   position:absolute;
+   top:-5%;
+   left:-20%;
+   z-index:-1;
+
+
 }
 
 .big-gear {
