@@ -112,7 +112,7 @@ button:hover {
 }
 
 .fact-number {
-   color:#ff7700;
+   color:#ff6200;
    font-weight:normal;
    text-align: center;
    display: none;
@@ -270,6 +270,29 @@ button:hover {
    top:43%;
    left:30%;
    width:44.5%;
+}
+
+.screen {
+   position:absolute;
+   top:46%;
+   left:30%;
+   width:43%;
+   height:13%;
+   /*border:1px solid blue;*/
+}
+.screen h4{
+   color:#ff6200;
+   font-size:85%;
+   line-height: 85%;
+   text-transform: uppercase;
+   letter-spacing: .1em;
+   text-align: center;
+   margin:0;
+}
+
+.screen img {
+   height:65%;
+   margin:0 15%;
 }
 
 .big-gear {
