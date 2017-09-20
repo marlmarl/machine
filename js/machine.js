@@ -12,39 +12,57 @@ $(document).ready(function() {
    });
 
    $('.valve1').click(function(e){
-      $('.active-fact').hide();
       e.preventDefault();
-      $('.fact1').show().addClass('active-fact');
+      $('.active-fact').hide();
+      $('.active-screen').hide();
+      $('.machine').effect('shake');
+      $('.fact1-screen').fadeIn(2000).show().addClass('active-screen');
+      $('.fact1').fadeIn(2000).show().addClass('active-fact');
+
    });
 
    $('.valve2').click(function(e){
-      $('.active-fact').hide();
       e.preventDefault();
+      $('.active-fact').hide();
+      $('.active-screen').hide();
+      $('.fact2-screen').show().addClass('active-screen');
       $('.fact2').show().addClass('active-fact');
    });
 
    $('.valve3').click(function(e){
-      $('.active-fact').hide();
       e.preventDefault();
+      $('.active-fact').hide();
+      $('.active-screen').hide();
+      $('.fact3-screen').show().addClass('active-screen');
       $('.fact3').show().addClass('active-fact');
+
    });
 
    $('.valve4').click(function(e){
-      $('.active-fact').hide();
       e.preventDefault();
+      $('.active-fact').hide();
+      $('.active-screen').hide();
+      $('.fact4-screen').show().addClass('active-screen');
       $('.fact4').show().addClass('active-fact');
+
    });
 
    $('.valve5').click(function(e){
-      $('.active-fact').hide();
       e.preventDefault();
+      $('.active-fact').hide();
+      $('.active-screen').hide();
+      $('.fact5-screen').show().addClass('active-screen');
       $('.fact5').show().addClass('active-fact');
+
    });
 
    $('.valve6').click(function(e){
-      $('.active-fact').hide();
       e.preventDefault();
+      $('.active-fact').hide();
+      $('.active-screen').hide();
+      $('.fact6-screen').show().addClass('active-screen');
       $('.fact6').show().addClass('active-fact');
+
    });
 
 
