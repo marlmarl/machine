@@ -127,9 +127,6 @@ button:hover {
 
 }
 
-.fact1 {
-   display:block;
-}
 .machine-container {
    /*border: 1px dashed purple;*/
    position: relative;
@@ -180,8 +177,8 @@ button:hover {
       }
 
       .facts {
+         display: none;
          position: fixed;
-         display:flex;
          justify-content: center;
          align-items: center;
          top: 0;
@@ -332,9 +329,9 @@ button:hover {
    z-index:-1;
 }
 
-.fact1-screen {
-   display:block;
-}
+/*.fact1-screen {
+   display:none;
+}*/
 
 .start-screen {
    /*display:none;*/
