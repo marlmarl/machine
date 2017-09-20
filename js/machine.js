@@ -13,9 +13,11 @@ $(document).ready(function() {
 
    $('.valve1').click(function(e){
       e.preventDefault();
+      $('.machine').removeClass('shake');
+      $('.valve1 img').addClass('rotate');
       $('.active-fact').hide();
       $('.active-screen').hide();
-      $('.machine').effect('shake');
+      $('.machine').addClass('shake');
       $('.fact1-screen').fadeIn(2000).show().addClass('active-screen');
       $('.fact1').fadeIn(2000).show().addClass('active-fact');
 
