@@ -76,7 +76,7 @@ function smoke(x, y, index) {
   this.lifeTime = 0;
 
   this.velY = -1 - (Math.random() * 0.5);
-  this.velX = Math.floor(Math.random() * (-6) + 3) /2;
+  this.velX = (Math.floor(Math.random() * (-6) + 3) /2)*0.5;
 }
 
 smoke.prototype.update = function () {
