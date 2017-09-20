@@ -279,6 +279,7 @@ button:hover {
    width:43%;
    height:13%;
    /*border:1px solid blue;*/
+   
 }
 .screen h4{
    color:#ff6200;
@@ -289,6 +290,7 @@ button:hover {
    text-align: center;
    margin:0;
 }
+
 
 .screen img {
    height:65%;
