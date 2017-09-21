@@ -99,16 +99,7 @@ smokeImage.onload = function(){
   loading = false;
 }
 
-/*function load(){
-  if(loading){
-    setTimeout(load, 100);
-  }else{
-    render();
-  }
-}*/
 
-
-// save off the original image for colorizing
 var origImage = smokeImage;
 
 window.onresize = resizeMe;

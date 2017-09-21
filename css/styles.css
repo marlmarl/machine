@@ -359,12 +359,21 @@ button:focus {
 }
 
 .graph {
+   display:flex;
    height: 50%;
    width:80%;
    margin:0 auto;
    margin-top:10%;
+   justify-content: space-around;
 
 }
+
+
+.graph div p {
+   margin:0;
+}
+
+
 
 .orange-frame {
    height:100%;
@@ -385,44 +394,50 @@ button:focus {
    animation-iteration-count: 1;
 }
 
-/*.orange-frame:first-child p {
-   animation-delay: 1s;
+.graph-separator {
+   height:100%;
+   width:10%;
+   font-size: 160%;
+   padding:7% 2% 5% 2%;
+   text-align: center;
+   overflow:hidden;
 }
 
-.orange-frame::nth-child(2) p {
-   animation-delay: 2s;
+.bar{
+   height:100%;
+   width:20%;
+   border:2px solid #ff6200;
+   border-radius: 15%;
+   display:inline-block;
+   font-size: 160%;
+   padding:7% 2% 5% 2%;
+   text-align: center;
+   overflow:hidden;
 }
 
-.orange-frame::nth-child(3) p {
-   animation-delay: 3s;
-}
-*/
+
+
 
 
 .fact1-graph {
-   display:flex;
-   justify-content: space-around;
 
 }
 
 
-.fact1-graph div p,
-.fact2-graph div p {
-   margin:0;
-}
 
 .fact2-graph {
    width:90%;
 }
-.uber-box {
-   margin-left: 2%;
-   margin-right:8%;
-}
-.ibm-box {
-   margin-right: -3%;
+
+.fact3-graph {
+
+   justify-content: space-around;
 }
 
-
+.fact6-graph {
+   justify-content: center;
+   width: 70%;
+}
 
 
 

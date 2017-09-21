@@ -2,9 +2,10 @@ PRORITY:
 - slider on the belly
 - missing bar graph
 - media queries (mobile font-sizes)
--centering graphs on web v
-- close ico smaller
+- centering graphs on web v
 - focus outline
+- client prefixes;
+- touch in the belly;
 
 
 Good to do
@@ -14,6 +15,7 @@ Good to do
 - orangeebox animations fix
 - flexbox support
 - after resizing from mobile to web -tge facts are not showing
+- remove selection
 
 
 
@@ -21,8 +23,9 @@ Good to do
 
 THINGS TO ASK THEM:
 - no-js
-- fonts woff
+- fonts woff - otf doeas not work on some versions of IE
 - przypisy
+- comments
 
 
 CHECK:
