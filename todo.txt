@@ -19,3 +19,5 @@
 - web - hide x
 - add p to numbers
 - oraggebox animations fix
+- smoke base fixed
+- loading time - preloader?
