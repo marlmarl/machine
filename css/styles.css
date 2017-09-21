@@ -358,7 +358,28 @@ button:hover {
    font-size: 160%;
    padding:7% 2% 5% 2%;
    text-align: center;
+   overflow:hidden;
 }
+
+.orangebox p {
+   animation-name:downer;
+   animation-duration:1s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: 1;
+}
+
+.orangebox:first-child p {
+   animation-delay: 1s;
+}
+
+.orangebox::nth-child(2) p {
+   animation-delay: 2s;
+}
+
+.orangebox::nth-child(3) p {
+   animation-delay: 3s;
+}
+
 
 
 .fact1-graph {
@@ -503,4 +524,57 @@ button:hover {
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-timing-function: linear;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes phonedial {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes liftmeup {
+  from {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes downer {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }

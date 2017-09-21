@@ -33,6 +33,7 @@ $(document).ready(function() {
 
    $('.close-fact').click(function(e) {
       $('.facts').hide();
+      $(this).closest('.single-fact').hide();
    });
 
 });

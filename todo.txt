@@ -1,2 +1,16 @@
-- media queries
+- machine shakes every time
+- current valve spinning
+- media queries (mobile font-sizes)
+- no-js
+- flexbox support
+- slider on the belly
+- slider mobile (swiping)
+- js:whole picture loading
+- animation of the top-tap falling
+- focus outline
+- smoke repositioning
+- fonts woff
+- number in paragrqaph?
+- nthchild animation delay - calc?
+- close ico
 - 
