@@ -1,24 +1,35 @@
-
-- media queries (mobile font-sizes)
-- no-js
-- flexbox support
+PRORITY:
 - slider on the belly
+- missing bar graph
+- media queries (mobile font-sizes)
+- modal - border radius margins
+-centering graphs on web v
+- close ico smaller
+- number in paragrqaph?
+- focus outline
+
+
+Good to do
+- remove unnessesary plugins/fonts/css
+- class into id cases
+- animation of indicators
+- orangeebox animations fix
+- flexbox support
+
+
+
+
+THINGS TO ASK THEM:
+- no-js
+- fonts woff
+
+
+CHECK:
+- machine shaking shakes the modal
+
+
+LATER:
 - slider mobile (swiping) - plugi
 - js:whole picture loading
 - animation of the top-tap falling
-- focus outline
-- fonts woff
-- number in paragrqaph?
-- nthchild animation delay - calc?
-- close ico
-- remove unnessesary plugins/fonts/css
-- class into id cases
-- mobile - remove content from the belly
-- web - hide x
-- add p to numbers
-- oraggebox animations fix
 - loading time - preloader?
-- what shoud be on the belly on mobile?
-- machine shaking shakes the modal
-- animation
-- modal - border radius margins
