@@ -15,13 +15,11 @@ $(document).ready(function() {
       var info = $(this).find('.infoRef').attr('href');
       var screen = $(this).find('.screenRef').attr('href');
       e.preventDefault();
-      $('.part').removeClass( 'rotate' ); 
-      $(this).find('.part').addClass('rotate');
+      $('.machine').removeClass('shake');
+      $(this).closest('.part').addClass('rotate');
       $('.active-fact').hide();
       $('.active-screen').hide();
-      $('.machine').addClass('shake').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
-            $(this).removeClass( 'shake' );
-        });
+      $('.machine').addClass('shake');
        if (window.matchMedia('(max-width: 767px)').matches){
           $('.facts').css("display","flex");
           $(info).show();

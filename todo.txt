@@ -13,4 +13,9 @@
 - number in paragrqaph?
 - nthchild animation delay - calc?
 - close ico
-- 
+- remove unnessesary plugins/fonts/css
+- class into id cases
+- mobile - remove content from the belly
+- web - hide x
+- add p to numbers
+- oraggebox animations fix

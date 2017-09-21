@@ -69,12 +69,9 @@ button {
 
 button:active,
 button:focus {
-  outline:1px dashed #FF6200;
+  outline:0;
 }
 
-button:hover {
-    outline:0;
-}
 
 .orange {
    font-weight: bold;
@@ -92,12 +89,12 @@ button:hover {
 .text-container {
    width:60%;
    height: 100%;
-   border:1px solid yellow;
+   /*border:1px solid yellow;*/
 }
 .article {
 
    margin:10% 5% 10% 5%;
-   border:1px solid green;
+   /*border:1px solid green;*/
 }
 .infographic-chapeau{
    margin: 0 0 1em 0;
@@ -121,10 +118,15 @@ button:hover {
 
 
 .single-fact {
-   border:1px dashed grey;
+   /*border:1px dashed grey;*/
    margin:10% 0;
    display:none;
 
+}
+
+.close-fact {
+   display: none;
+   float:right;
 }
 
 .machine-container {
@@ -138,9 +140,10 @@ button:hover {
 #canvas {
    /*visibility: hidden;*/
    position:absolute;
-   border:1px dashed red;
+   top:-23%;
+   /*border:1px dashed red;*/
    width:100%;
-   height:16%;
+   height:39%;
 }
 
 #smokeparticle {
@@ -194,8 +197,12 @@ button:hover {
          background-color: rgba(255, 255, 255, 0.7);
       }
 
+      .close-fact {
+         display:block;
+      }
+
       .fact-content {
-         margin:10%;
+         margin:10% 10% 10% 10%;
       }
 
       .machine {
@@ -505,7 +512,7 @@ button:hover {
 
 }
 
-@-webkit-keyframes spaceboots {
+@-webkit-keyframes shaking {
 	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
 	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
 	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
@@ -519,7 +526,7 @@ button:hover {
 	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }
 .shake {
-	-webkit-animation-name: spaceboots;
+	-webkit-animation-name: shaking;
 	-webkit-animation-duration: 0.4s;
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: 1;
