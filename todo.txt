@@ -2,10 +2,8 @@ PRORITY:
 - slider on the belly
 - missing bar graph
 - media queries (mobile font-sizes)
-- modal - border radius margins
 -centering graphs on web v
 - close ico smaller
-- number in paragrqaph?
 - focus outline
 
 
@@ -15,6 +13,8 @@ Good to do
 - animation of indicators
 - orangeebox animations fix
 - flexbox support
+- after resizing from mobile to web -tge facts are not showing
+
 
 
 
@@ -22,6 +22,7 @@ Good to do
 THINGS TO ASK THEM:
 - no-js
 - fonts woff
+- przypisy
 
 
 CHECK:
