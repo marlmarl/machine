@@ -67,11 +67,10 @@ button {
 }
 
 
-button:active,
+/*button:active,
 button:focus {
-  outline:0;
 }
-
+*/
 
 .orange {
    font-weight: bold;
@@ -140,10 +139,12 @@ button:focus {
 #canvas {
    /*visibility: hidden;*/
    position:absolute;
-   top:-23%;
+   top:-22.5%;
+   left:-15.5%;
    /*border:1px dashed red;*/
-   width:100%;
+   width:130%;
    height:39%;
+   z-index: -1;
 }
 
 #smokeparticle {
@@ -192,6 +193,10 @@ button:focus {
          z-index: 1000;
       }
 
+      .fact-screen {
+         display:none;
+      }
+
       .single-fact {
          margin:0 auto;
          background-color: rgba(255, 255, 255, 0.7);
@@ -199,10 +204,11 @@ button:focus {
 
       .close-fact {
          display:block;
+         margin:4px;
       }
 
       .fact-content {
-         margin:10% 10% 10% 10%;
+         margin:15% 10% 10% 10%;
       }
 
       .machine {
@@ -356,7 +362,7 @@ button:focus {
 
 }
 
-.orangebox {
+.orange-frame {
    height:100%;
    width:20%;
    border:2px solid #ff6200;
@@ -368,25 +374,25 @@ button:focus {
    overflow:hidden;
 }
 
-.orangebox p {
+.orange-frame p {
    animation-name:downer;
    animation-duration:1s;
    animation-timing-function: ease-in-out;
    animation-iteration-count: 1;
 }
 
-.orangebox:first-child p {
+/*.orange-frame:first-child p {
    animation-delay: 1s;
 }
 
-.orangebox::nth-child(2) p {
+.orange-frame::nth-child(2) p {
    animation-delay: 2s;
 }
 
-.orangebox::nth-child(3) p {
+.orange-frame::nth-child(3) p {
    animation-delay: 3s;
 }
-
+*/
 
 
 .fact1-graph {

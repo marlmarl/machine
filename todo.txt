@@ -1,14 +1,12 @@
-- machine shakes every time
-- current valve spinning
+
 - media queries (mobile font-sizes)
 - no-js
 - flexbox support
 - slider on the belly
-- slider mobile (swiping)
+- slider mobile (swiping) - plugi
 - js:whole picture loading
 - animation of the top-tap falling
 - focus outline
-- smoke repositioning
 - fonts woff
 - number in paragrqaph?
 - nthchild animation delay - calc?
@@ -19,5 +17,8 @@
 - web - hide x
 - add p to numbers
 - oraggebox animations fix
-- smoke base fixed
 - loading time - preloader?
+- what shoud be on the belly on mobile?
+- machine shaking shakes the modal
+- animation
+- modal - border radius margins

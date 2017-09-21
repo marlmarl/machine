@@ -8,14 +8,13 @@ $(document).ready(function() {
          render();
       }
       clicked = 1;
-      //$('#main-nav').css("display", "flex");
    });
 
    $('.valve').click(function(e) {
       var info = $(this).find('.infoRef').attr('href');
       var screen = $(this).find('.screenRef').attr('href');
       e.preventDefault();
-      $('.part').removeClass( 'rotate' ); 
+      $('.part').removeClass( 'rotate' );
       $(this).find('.part').addClass('rotate');
       $('.active-fact').hide();
       $('.active-screen').hide();
@@ -26,10 +25,10 @@ $(document).ready(function() {
           $('.facts').css("display","flex");
           $(info).show();
           $('.screen-mobile').show();
-          $('.fact-screen').show();
+          $('.fact-screen-mobile').show();
       }else{
-            $(screen).fadeIn(2000).show().addClass('active-screen');
-            $(info).fadeIn(2000).show().addClass('active-fact');
+            $(screen).fadeIn(500).show().addClass('active-screen');
+            $(info).fadeIn(500).show().addClass('active-fact');
       }
    });
 
@@ -38,14 +37,12 @@ $(document).ready(function() {
       $(this).closest('.single-fact').hide();
    });
 
-});
-
-
-
-function load() {
-   if (loading) {
-      setTimeout(load, 100);
-   } else {
-      render();
+   function load() {
+      if (loading) {
+         setTimeout(load, 100);
+      } else {
+         render();
+      }
    }
-}
+
+});
