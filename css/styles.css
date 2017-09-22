@@ -248,7 +248,7 @@ button:active, button:focus {
 
 .indicator {
    position: absolute;
-   top: 29.9%;
+   top: 29.7%;
    width: 15%;
 }
 
@@ -305,6 +305,8 @@ button:active, button:focus {
 .screen-mobile {
    width: 44%;
    height: 15%;
+   margin:0 auto;
+   margin-top: 10%;
    display: none;
 }
 
