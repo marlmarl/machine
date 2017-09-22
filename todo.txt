@@ -1,6 +1,5 @@
 PRORITY:
 
-- media queries (mobile font-sizes)
 - problems with ipad (web view on portrait - no facts)
 - mobile: scrolling of the background - modal window not scrolling - while overflow hidden the x-icon is hidden, but overflow-y somehow shows also the vertical scroll because if the x-icon outside window
 - animation of the top-tap falling
@@ -35,6 +34,6 @@ CHECK:
 DONE:
 - woff
 - touch the valve in the belly;
-- js:whole picture loading
+- js:whole picture loading//
 - missing bar graph animation
 - placing graphs in the mobile version
