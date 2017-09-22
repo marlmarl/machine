@@ -2,7 +2,7 @@ PRORITY:
 
 - media queries (mobile font-sizes)
 - problems with ipad (web view on portrait - no facts)
-- mobile: scrolling of the background - modal window not scrolling
+- mobile: scrolling of the background - modal window not scrolling - while overflow hidden the x-icon is hidden, but overflow-y somehow shows also the vertical scroll because if the x-icon outside window
 - animation of the top-tap falling
 - after resizing from mobile to web -the facts are not showing (in the middle of fixing it) and also the mobile graphs are showing
 - slideshow on the belly

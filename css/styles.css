@@ -378,7 +378,6 @@ button:active, button:focus {
    font-size: 160%;
    padding: 7% 2% 5% 2%;
    text-align: center;
-   overflow: hidden;
 }
 
 .fact2-graph {
