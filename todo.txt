@@ -4,12 +4,10 @@ PRORITY:
 - missing bar graph animation
 - media queries (mobile font-sizes)
 - placing graphs in the mobile version
-- client prefixes before every send!!!!
-- touch the valve in the belly;
 - problems with ipad (web view on portrait - no facts)
 - mobile: scrolling of the background - modal window not scrolling
 - animation of the top-tap falling
-
+- after resizing from mobile to web -the facts are not showing
 
 Good to do
 - ux - better indication that the valves are clickable
@@ -29,10 +27,11 @@ THINGS TO ASK THEM:
 
 
 CHECK:
+- client prefixes before every send!!!!
 - machine shaking shakes the modal on web imitating mobile
 - woff2 - caniuse
 
 
 DONE:
 - woff
-- after resizing from mobile to web -the facts are not showing
+- touch the valve in the belly;
