@@ -30,6 +30,7 @@ $(document).ready(function() {
           $('.facts').fadeIn(500).css("display","flex");
           $(info).show();
           $('.screen-mobile').show();
+          $('body').addClass('.modal-open');
           $('.fact-screen-mobile').show();
       }else{
             $(screenframe).fadeIn(500).show().addClass('active-screen');
@@ -40,6 +41,7 @@ $(document).ready(function() {
    $('.close-fact').click(function(e) {
       $('.facts').fadeOut(500);
       $(this).closest('.single-fact').hide();
+      $('body').removeClass('.modal-open');
    });
 
    function load() {

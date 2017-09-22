@@ -8,6 +8,7 @@ PRORITY:
 - slideshow on the belly
 - swiping on mobile
 - removing headings
+- mobile graphs correction
 
 Good to do
 - ux - better indication that the valves are clickable
