@@ -1,21 +1,24 @@
 PRORITY:
-- slider on the belly
-- missing bar graph
+- slideshow on the belly
+- swiping on mobile
+- missing bar graph animation
 - media queries (mobile font-sizes)
-- centering graphs on web v
-- focus outline
+- placing graphs in the mobile wersion
 - client prefixes;
-- touch in the belly;
+- touch the valve in the belly;
+- after resizing from mobile to web -the facts are not showing
+- problems with ipad (web view on portrait - no facts)
+- mobile: scrolling of the background - modal window not scrolling
+- animation of the top-tap falling
 
 
 Good to do
-- remove unnessesary plugins/fonts/css
-- class into id cases
-- animation of indicators
-- orangeebox animations fix
-- flexbox support
-- after resizing from mobile to web -tge facts are not showing
+- ux - better indication that the valves are clickable
+- improving the animation of indicators
+- flexbox support check
 - remove selection
+- focus outline
+- js:whole picture loading (loading time - preloader?)
 
 
 
@@ -23,17 +26,9 @@ Good to do
 
 THINGS TO ASK THEM:
 - no-js
-- fonts woff - otf doeas not work on some versions of IE
-- przypisy
-- comments
+- fonts woff
+- footnotes
 
 
 CHECK:
-- machine shaking shakes the modal
-
-
-LATER:
-- slider mobile (swiping) - plugi
-- js:whole picture loading
-- animation of the top-tap falling
-- loading time - preloader?
+- machine shaking shakes the modal on web imitating mobile
