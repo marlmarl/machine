@@ -1,6 +1,8 @@
 $(document).ready(function() {
    var clicked = 0;
 
+   $('.machine').fadeIn(500).show();
+
    $('.valve').click(function(e) {
       e.preventDefault();
       $('.top-valve').hide();

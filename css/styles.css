@@ -136,6 +136,7 @@ button:active, button:focus {
 }
 
 .machine {
+   display:none;
    position: relative;
    max-width: 254px;
    margin-right: 5%;
