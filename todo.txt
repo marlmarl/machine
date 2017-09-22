@@ -3,8 +3,8 @@ PRORITY:
 - swiping on mobile
 - missing bar graph animation
 - media queries (mobile font-sizes)
-- placing graphs in the mobile wersion
-- client prefixes;
+- placing graphs in the mobile version
+- client prefixes before every send!!!!
 - touch the valve in the belly;
 - after resizing from mobile to web -the facts are not showing
 - problems with ipad (web view on portrait - no facts)
