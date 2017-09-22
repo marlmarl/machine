@@ -15,7 +15,7 @@ Good to do
 - flexbox support check
 - remove selection
 - focus outline
-- js:whole picture loading (loading time - preloader?)
+- preloader?
 
 
 
@@ -35,3 +35,4 @@ CHECK:
 DONE:
 - woff
 - touch the valve in the belly;
+- js:whole picture loading
