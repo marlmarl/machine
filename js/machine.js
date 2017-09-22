@@ -26,6 +26,7 @@ $(document).ready(function() {
        if (window.matchMedia('(max-width: 767px)').matches){
           $('.facts').fadeIn(500).css("display","flex");
           $(info).show();
+          $('.start-screen').show();
           $('.screen-mobile').show();
           $('.fact-screen-mobile').show();
       }else{
@@ -49,4 +50,17 @@ $(document).ready(function() {
 
 
 
+});
+
+$( window ).resize(function() {
+   if (window.matchMedia('(max-width: 767px)').matches){
+      $('.facts').fadeIn(500).css("display","flex");
+      $(info).show();
+      $('.start-screen').show();
+      $('.screen-mobile').show();
+      $('.fact-screen-mobile').show();
+ }else{
+        $(screenframe).fadeIn(500).show().addClass('active-screen');
+        $(info).fadeIn(500).show().addClass('active-fact');
+ };
 });
