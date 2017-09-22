@@ -389,6 +389,11 @@ button:active, button:focus {
    align-items: flex-end;
 }
 
+.fact4-graph .graph-separator {
+   width: 30%;
+
+}
+
 .air {
    height:15px;
 
