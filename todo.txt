@@ -26,9 +26,9 @@ Good to do
 
 THINGS TO ASK THEM:
 - no-js
-- fonts woff
 - footnotes
 
 
 CHECK:
 - machine shaking shakes the modal on web imitating mobile
+- woff2 - caniuse
