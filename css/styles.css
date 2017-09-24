@@ -99,7 +99,8 @@ button:active, button:focus {
    display:flex;
           -ms-flex-pack: center;
               -webkit-justify-content: center;
-              justify-content: center;
+              -webkit-box-pack: center;
+                  justify-content: center;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
@@ -117,7 +118,7 @@ button:active, button:focus {
 @media screen and (max-width:768px) {
     .text-container {
         display: none;
-          position: fixed;   
+          position: fixed;
           top: 0;
           right: 0;
           left: 0;
@@ -670,36 +671,63 @@ button:active, button:focus {
     display: flex;
     animation-name:fadein;
     animation-iteration-count: 1;
-    animation-duration: 0.7s; 
+    animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
 }*/
+
+
+@-webkit-keyframes fadein{
+    from {
+        opacity:0
+    }
+
+    to {
+        opacity:1
+    }
+
+}
 
 
 @keyframes fadein{
     from {
         opacity:0
     }
-    
+
     to {
         opacity:1
     }
-    
+
+}
+
+@-webkit-keyframes fadeout{
+    from {
+        opacity:1
+    }
+
+    to {
+        opacity:0
+    }
+
 }
 
 @keyframes fadeout{
     from {
         opacity:1
     }
-    
+
     to {
         opacity:0
     }
-    
+
 }
 
 .fadeout {
-        animation-name:fadeout;
-    animation-iteration-count: 1;
-    animation-duration: 0.7s; 
-    animation-timing-function: ease-in-out;
+        -webkit-animation-name:fadeout;
+                animation-name:fadeout;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-duration: 0.7s;
+            animation-duration: 0.7s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
 }
