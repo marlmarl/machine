@@ -38,7 +38,7 @@ $(document).ready(function() {
 
    $('.close-fact').click(function(e) {
       $('.facts').fadeOut(500);
-      $(this).closest('.single-fact').hide();
+      $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
    });
 
