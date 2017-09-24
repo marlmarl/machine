@@ -41,8 +41,9 @@ $(document).ready(function() {
       $('body').removeClass('modal-open');
    });
 
-    window.onresize = function() {  
-        if ($(window).width() < 768)
+    window.onresize = function() {
+      console.log($(window).width())
+        if ($(window).width() < 769)
             $('.text-container').hide();
         else
             $('.text-container').show();

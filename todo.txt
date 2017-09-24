@@ -1,14 +1,9 @@
 PRORITY:
-
-- problems with ipad (web view on portrait - no facts)
-- mobile: scrolling of the background - modal window not scrolling - while overflow hidden the x-icon is hidden, but overflow-y somehow shows also the vertical scroll because if the x-icon outside window
 - animation of the top-tap falling
 - slideshow on the belly
 - swiping on mobile
 - bug:after closing fact by swiping on mobile does not trigger modal closing script - effect:2 modals showing after next click on the valve
-- flexbox justify-content not working on ipad
-- bug: smoke not triggering sometimes
-- text check (interpunction, missspellings in the org. content)
+
 
 Good to do
 - ux - better indication that the valves are clickable
@@ -18,9 +13,6 @@ Good to do
 - preloader?
 - code comments and cleaning
 - js:whole picture loading
-
-
-
 
 
 THINGS TO ASK THEM:
@@ -33,6 +25,9 @@ CHECK:
 - machine shaking shakes the modal on web imitating mobile
 - woff2 - caniuse
 - crossbrowser flexbox support check
+- text check (interpunction, missspellings in the org. content)
+- problems with ipad (web view on portrait - no facts) -fixed but checked only in browser imitating ipad
+
 
 
 DONE:
@@ -42,3 +37,6 @@ DONE:
 - placing graphs in the mobile version
 - after resizing from mobile to web -the facts are not showing (in the middle of fixing it) and also the mobile graphs are showing as well after resising to web
 - removing headings and positioning facts in the center
+- mobile: scrolling of the background - modal window not scrolling - while overflow hidden the x-icon is hidden, but overflow-y somehow shows also the vertical scroll because if the x-icon outside window
+- flexbox justify-content not working on ipad
+- bug: smoke not triggering sometimes
