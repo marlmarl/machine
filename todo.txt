@@ -5,9 +5,10 @@ PRORITY:
 - animation of the top-tap falling
 - slideshow on the belly
 - swiping on mobile
-- removing headings
 - bug:after closing fact by swiping on mobile does not trigger modal closing script - effect:2 modals showing after next click on the valve
-- flexbox justify-content not working on ipad 
+- flexbox justify-content not working on ipad
+- bug: smoke not triggering sometimes
+- text check (interpunction, missspellings in the org. content)
 
 Good to do
 - ux - better indication that the valves are clickable
@@ -16,6 +17,8 @@ Good to do
 - remove selection
 - focus outline
 - preloader?
+- code comments and cleaning
+- js:whole picture loading//
 
 
 
@@ -35,7 +38,7 @@ CHECK:
 DONE:
 - woff
 - touch the valve in the belly;
-- js:whole picture loading//
 - missing bar graph animation
 - placing graphs in the mobile version
 - after resizing from mobile to web -the facts are not showing (in the middle of fixing it) and also the mobile graphs are showing as well after resising to web
+- removing headings and positioning facts in the center

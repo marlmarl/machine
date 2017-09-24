@@ -63,7 +63,6 @@ button:active, button:focus {
 
 .flex {
    display: -webkit-box !important;
-   display: -moz-box !important;
     display: -ms-flexbox !important;
     display: -webkit-flex !important;
     display: flex !important;
@@ -75,6 +74,7 @@ button:active, button:focus {
 }
 
 .infographic-container {
+   border:1px solid #ff6200;
    display: -webkit-box;
    display: -ms-flexbox;
    display: -webkit-flex;
@@ -84,40 +84,47 @@ button:active, button:focus {
        -ms-flex-direction: row;
            -webkit-flex-direction: row;
            flex-direction: row;
+   -webkit-box-align: stretch;
+   -webkit-align-items: stretch;
+       -ms-flex-align: stretch;
+           align-items: stretch;
 }
 
 .text-container {
    width: 60%;
-   height: 100%;
+   display:-webkit-box;
+   display:-webkit-flex;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+       -ms-flex-align: center;
+           align-items: center;
+   margin:0 5%;
 }
 
-.article {
-   margin: 10% 5% 10% 5%;
+.machine-container {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 40%;
 }
 
-.infographic-chapeau {
-   margin: 0 0 1em 0;
-   font-size: 1em;
-   font-weight: lighter;
-   color: #767676;
-   letter-spacing: .15em;
-   text-transform: uppercase
+#canvas {
+   position: absolute;
+   top: -22.5%;
+   left: -15.5%;
+   width: 130%;
+   height: 39%;
+   z-index: -1;
 }
 
-.infographic-title {
-   font-size: 3em;
-   margin: 0 0 .25em;
-   line-height: 1.20833em
-}
-
-.infographic-subtitle {
-   font-size: 1.13333em;
-   line-height: 1.47059em;
-   font-weight: normal;
+#smokeparticle {
+   display: none;
 }
 
 .single-fact-container {
-    display: none;
+   display: none;
    width: 90%;
    max-height: 90%;
 }
@@ -141,28 +148,9 @@ button:active, button:focus {
    left:10px;
 }
 
-.machine-container {
-   position: relative;
-   top: 0;
-   left: 0;
-   width: 40%;
-}
 
-#canvas {
-   position: absolute;
-   top: -22.5%;
-   left: -15.5%;
-   width: 130%;
-   height: 39%;
-   z-index: -1;
-}
-
-#smokeparticle {
-   display: none;
-}
 
 .machine {
-   display:none;
    position: relative;
    max-width: 254px;
    margin-right: 5%;
