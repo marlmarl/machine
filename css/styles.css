@@ -61,6 +61,14 @@ button:active, button:focus {
    overflow:hidden;
 }
 
+.flex {
+   display: -webkit-box !important;
+   display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+
 .orange {
    font-weight: bold;
    color: #FF6200;
@@ -69,14 +77,13 @@ button:active, button:focus {
 .infographic-container {
    display: -webkit-box;
    display: -ms-flexbox;
+   display: -webkit-flex;
    display: flex;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
        -ms-flex-direction: row;
+           -webkit-flex-direction: row;
            flex-direction: row;
-   -webkit-box-align: stretch;
-       -ms-flex-align: stretch;
-           align-items: stretch;
 }
 
 .text-container {
@@ -173,6 +180,7 @@ button:active, button:focus {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
+              -webkit-flex-direction: column;
               flex-direction: column;
    }
    .text-container {
@@ -187,8 +195,12 @@ button:active, button:focus {
       position: fixed;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
+              -webkit-justify-content: center;
               justify-content: center;
-      align-items: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
       top: 0;
       right: 0;
       left: 0;
@@ -353,12 +365,14 @@ button:active, button:focus {
 .graph {
    display: -webkit-box;
    display: -ms-flexbox;
+   display: -webkit-flex;
    display: flex;
    width: 80%;
    margin: 0 auto;
    margin-top: 10%;
    -ms-flex-pack: distribute;
-       justify-content: space-around;
+       -webkit-justify-content: space-around;
+           justify-content: space-around;
 }
 
 .graph div p {
@@ -401,7 +415,10 @@ button:active, button:focus {
 }
 
 .fact3-graph {
-   align-items: flex-end;
+   -webkit-box-align: end;
+   -webkit-align-items: flex-end;
+       -ms-flex-align: end;
+           align-items: flex-end;
 }
 
 .fact4-graph .graph-separator {
@@ -422,18 +439,34 @@ button:active, button:focus {
    border-radius: 4px;
    background-color: #ff6200;
    width:25px;
-   animation-name:grow;
-   animation-duration: 1s;
-   animation-iteration-count: 1;
+   -webkit-animation-name:grow;
+           animation-name:grow;
+   -webkit-animation-duration: 1s;
+           animation-duration: 1s;
+   -webkit-animation-iteration-count: 1;
+           animation-iteration-count: 1;
 
+}
+
+@-webkit-keyframes grow {
+  0% {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+100% {
+  -webkit-transform: scaleY(10%);
+          transform: scaleY(10%);
+}
 }
 
 @keyframes grow {
   0% {
-  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 100% {
-  transform: scaleY(10%);
+  -webkit-transform: scaleY(10%);
+          transform: scaleY(10%);
 }
 }
 
@@ -442,6 +475,7 @@ button:active, button:focus {
 .fact5-graph {
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
+           -webkit-justify-content: space-between;
            justify-content: space-between;
    width: 90%;
 }
@@ -449,6 +483,7 @@ button:active, button:focus {
 .fact6-graph {
    -webkit-box-pack: center;
        -ms-flex-pack: center;
+           -webkit-justify-content: center;
            justify-content: center;
    width: 70%;
 }

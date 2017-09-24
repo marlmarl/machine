@@ -25,7 +25,7 @@ $(document).ready(function() {
         });
        if (window.matchMedia('(max-width: 767px)').matches){
           $('.start-screen').show();
-          $('.facts').fadeIn(500).css("display","flex");
+          $('.facts').fadeIn(500).addClass('flex');
           $('body').addClass('modal-open');
           $(info).show();
           $('.screen-mobile').show();
@@ -43,7 +43,7 @@ $(document).ready(function() {
       $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
    });
-    
+
     window.onresize = function() {
         $('.facts').css("display","none");
         $('.part').removeClass( 'rotate' );
