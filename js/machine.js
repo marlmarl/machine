@@ -14,7 +14,6 @@ $(document).ready(function() {
       e.preventDefault();
       var info = $(this).find('.infoRef').attr('title');
       var screenframe = $(this).find('.screenRef').attr('title');
-
       $('.part').removeClass( 'rotate' );
       $(this).find('.part').addClass('rotate');
       $('.active-fact').hide();
@@ -25,28 +24,32 @@ $(document).ready(function() {
        var isMobile = window.matchMedia("(max-width: 768px)").matches
        if (isMobile){
           $('.start-screen').show();
-          $('.facts').fadeIn(500).addClass('flex');
+          $('.text-container').fadeIn(500);
           $('body').addClass('modal-open');
           $(info).show();
           $('.screen-mobile').show();
-          $('.fact-screen-mobile').show();
       }else{
           $('.screen-mobile').hide();
-          $('.facts').css("display","block");
             $(screenframe).fadeIn(500).show().addClass('active-screen');
             $(info).fadeIn(500).show().addClass('active-fact');
       }
    });
 
    $('.close-fact').click(function(e) {
-      $('.facts').fadeOut(500).removeClass('flex');
+      $('.text-container').fadeOut(500);
       $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
    });
 
-    window.onresize = function() {
-        $('.facts').removeClass('flex');
+    window.onresize = function() {  
+        if ($(window).width() < 768)
+            $('.text-container').hide();
+        else
+            $('.text-container').show();
+        $('body').removeClass('modal-open');
+        $('.single-fact-container').hide();
         $('.part').removeClass( 'rotate' );
+        $('.screen-mobile').hide();
     }
 
    function load() {
