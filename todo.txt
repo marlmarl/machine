@@ -13,12 +13,11 @@ PRORITY:
 Good to do
 - ux - better indication that the valves are clickable
 - improving the animation of indicators
-- flexbox support check
 - remove selection
 - focus outline
 - preloader?
 - code comments and cleaning
-- js:whole picture loading//
+- js:whole picture loading
 
 
 
@@ -33,6 +32,7 @@ CHECK:
 - client prefixes before every send!!!!
 - machine shaking shakes the modal on web imitating mobile
 - woff2 - caniuse
+- crossbrowser flexbox support check
 
 
 DONE:
