@@ -26,6 +26,7 @@ $(document).ready(function() {
        if (window.matchMedia('(max-width: 767px)').matches){
           $('.start-screen').show();
           $('.facts').fadeIn(500).css("display","flex");
+          $('body').addClass('modal-open');
           $(info).show();
           $('.screen-mobile').show();
           $('.fact-screen-mobile').show();
@@ -38,6 +39,7 @@ $(document).ready(function() {
    $('.close-fact').click(function(e) {
       $('.facts').fadeOut(500);
       $(this).closest('.single-fact').hide();
+      $('body').removeClass('modal-open');
    });
 
    function load() {
