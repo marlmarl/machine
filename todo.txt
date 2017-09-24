@@ -1,6 +1,6 @@
 PRORITY:
 - animation of the top-tap falling
-- slideshow on the belly
+- slides on mobile (arrows and dot navigation)
 - swiping on mobile
 - bug:after closing fact by swiping on mobile does not trigger modal closing script - effect:2 modals showing after next click on the valve
 
@@ -40,3 +40,4 @@ DONE:
 - mobile: scrolling of the background - modal window not scrolling - while overflow hidden the x-icon is hidden, but overflow-y somehow shows also the vertical scroll because if the x-icon outside window
 - flexbox justify-content not working on ipad
 - bug: smoke not triggering sometimes
+- slideshow on the belly

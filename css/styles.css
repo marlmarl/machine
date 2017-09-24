@@ -174,7 +174,9 @@ button:active, button:focus {
    left:10px;
 }
 
-
+.fact4slides {
+   display:none;
+}
 
 .machine {
    position: relative;
