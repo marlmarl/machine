@@ -109,40 +109,27 @@ button:active, button:focus {
    font-weight: normal;
 }
 
-.facts {
-   display: none;
-   position: fixed;
-   -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           justify-content: center;
-   align-items: center;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
-   background-color: rgba(0, 0, 0, 0.7);
-   z-index: 1000;
-   overflow: auto;
+.single-fact-container {
+   width: 90%;
+   max-height: 90%;
+   background-color: yellow;
 }
 
 
 .single-fact {
    display: none;
-   width: 90%;
-   max-height: 90%;
    background-color: rgba(255, 255, 255, 0.8);
+   width:100%;
+   max-height: 100%;
    border-radius: 10px;
    overflow-y: auto;
    overflow-x:hidden;
-   border:10px solid rgba(255, 255, 255, 0);
+
 }
 
 .close-fact {
    display: none;
    float: right;
-   position:relative;
-   top:-10px;
-   left:10px;
 }
 
 .machine-container {
@@ -192,6 +179,23 @@ button:active, button:focus {
    .machine-container {
       width: 100%;
    }
+
+   .facts {
+      display: none;
+      position: fixed;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      overflow: auto;
+   }
+
 
    .fact-screen {
       display: none;
