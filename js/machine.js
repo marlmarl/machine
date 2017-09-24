@@ -31,6 +31,8 @@ $(document).ready(function() {
           $('.screen-mobile').show();
           $('.fact-screen-mobile').show();
       }else{
+          $('.screen-mobile').hide();
+          $('.facts').css("display","block");
             $(screenframe).fadeIn(500).show().addClass('active-screen');
             $(info).fadeIn(500).show().addClass('active-fact');
       }
@@ -41,6 +43,11 @@ $(document).ready(function() {
       $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
    });
+    
+    window.onresize = function() {
+        $('.facts').css("display","none");
+        $('.part').removeClass( 'rotate' );
+    }
 
    function load() {
       if (loading) {
