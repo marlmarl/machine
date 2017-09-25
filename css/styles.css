@@ -68,18 +68,14 @@ button:active, button:focus {
 }
 
 .infographic-container {
-   border:1px solid #ff6200;
    display: -webkit-box;
    display: -ms-flexbox;
-   display: -webkit-flex;
    display: flex;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
        -ms-flex-direction: row;
-           -webkit-flex-direction: row;
            flex-direction: row;
    -webkit-box-align: stretch;
-   -webkit-align-items: stretch;
        -ms-flex-align: stretch;
            align-items: stretch;
 }
@@ -87,15 +83,12 @@ button:active, button:focus {
 .facts {
        min-height:100%;
     display:-webkit-box;
-   display:-webkit-flex;
    display:-ms-flexbox;
    display:flex;
           -ms-flex-pack: center;
-              -webkit-justify-content: center;
               -webkit-box-pack: center;
                   justify-content: center;
       -webkit-box-align: center;
-      -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
    }
@@ -189,7 +182,6 @@ button:active, button:focus {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              -webkit-flex-direction: column;
               flex-direction: column;
    }
 
@@ -353,13 +345,11 @@ button:active, button:focus {
 .graph {
    display: -webkit-box;
    display: -ms-flexbox;
-   display: -webkit-flex;
    display: flex;
    width: 80%;
    margin: 0 auto;
    margin-top: 10%;
    -ms-flex-pack: distribute;
-       -webkit-justify-content: space-around;
            justify-content: space-around;
 }
 
@@ -404,7 +394,6 @@ button:active, button:focus {
 
 .fact3-graph {
    -webkit-box-align: end;
-   -webkit-align-items: flex-end;
        -ms-flex-align: end;
            align-items: flex-end;
 }
@@ -463,7 +452,6 @@ button:active, button:focus {
 .fact5-graph {
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
-           -webkit-justify-content: space-between;
            justify-content: space-between;
    width: 90%;
 }
@@ -471,7 +459,6 @@ button:active, button:focus {
 .fact6-graph {
    -webkit-box-pack: center;
        -ms-flex-pack: center;
-           -webkit-justify-content: center;
            justify-content: center;
    width: 70%;
 }
