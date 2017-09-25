@@ -61,12 +61,8 @@ button:active, button:focus {
    overflow:hidden;
 }
 
-
-
-
-
-.block {
-   display: block;
+.fact4slides {
+   display:none;
 }
 
 .orange {
@@ -692,18 +688,6 @@ button:active, button:focus {
       transform: translate3d(0, 0, 0);
    }
 }
-
-/*.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    animation-name:fadein;
-    animation-iteration-count: 1;
-    animation-duration: 0.7s; 
-    animation-timing-function: ease-in-out;
-}*/
-
 
 @keyframes fadein{
     from {

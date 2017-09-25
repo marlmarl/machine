@@ -38,6 +38,10 @@ $(document).ready(function() {
       $('body').removeClass('modal-open');
    });
 
+    $('.valve4').click(function(e){
+      bellySlides();
+   })
+    
     window.onresize = function() {  
         if ($(window).width() < 768)
             $('.text-container').hide();
@@ -62,3 +66,19 @@ $(document).ready(function() {
 
 
 });
+
+function bellySlides() {
+    var allSlides = $('#screen4 .fact4slides');
+    var $activeSlide = allSlides.eq(0);
+    $activeSlide.show();
+    var $next = $activeSlide.next();
+    var timer = setInterval(function() {
+        $next.fadeIn(2000);
+        $activeSlide.hide();
+        $activeSlide = $next;
+        console.log(allSlides.last().index());
+        $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
+            $next = allSlides.eq(0):$activeSlide.next();
+
+    }, 2000);
+}

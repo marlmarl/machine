@@ -73,7 +73,7 @@ $('.slider').each(function() {              // For every slider
                     move(0);                           // Move to the first slide
                 }
             }
-            if (direction === "right")
+            if (direction === "right"){
                 if (currentIndex > 0) { // If slide < total slides
                     move(currentIndex - 1);            // Move to next slide
                 } else {                             // Otherwise
