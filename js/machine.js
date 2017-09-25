@@ -37,6 +37,7 @@ $(document).ready(function() {
 
    $('.valve4').click(function(e){
       bellySlides();
+      mobileSlides();
    })
 
    $('.close-fact').click(function(e) {
@@ -72,6 +73,23 @@ $(document).ready(function() {
 
 function bellySlides() {
     var allSlides = $('#screen4 .fact4slides');
+    var $activeSlide = allSlides.eq(0);
+    $activeSlide.show();
+    var $next = $activeSlide.next();
+    var timer = setInterval(function() {
+        $next.fadeIn(2000);
+        $activeSlide.hide();
+        $activeSlide = $next;
+        console.log(allSlides.last().index());
+        $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
+            $next = allSlides.eq(0):$activeSlide.next();
+
+    }, 2000);
+}
+
+
+function mobileSlides() {
+    var allSlides = $('#screen-mobile-4 .fact-screen-mobile4');
     var $activeSlide = allSlides.eq(0);
     $activeSlide.show();
     var $next = $activeSlide.next();

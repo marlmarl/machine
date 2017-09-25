@@ -80,6 +80,58 @@ button:active, button:focus {
            align-items: stretch;
 }
 
+
+   .text-container {
+       width: 60%;
+       margin:0 5%;
+      /* border:1px solid green;*/
+    }
+
+
+
+@media screen and (max-width:768px) {
+   .text-container {
+      display: none;
+      width:100%;
+      margin:0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      overflow: auto;
+   }
+}
+
+.dots {
+   text-align: center;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: block;
+}
+
+.dot {
+   display: inline-block;
+   width: 0.7em;
+   height: 0.7em;
+   margin-left: .5em;
+   background-color:  rgba(255, 255, 255, 0.8);
+   border-radius: 50%;
+   transition: background-color .4s ease-out .2s;
+   overflow: hidden;
+   text-indent: -100%;
+
+}
+
+.dot:first-child {
+    background-color: #ff6200;
+    border:1px solid #ff6200;
+}
+
+
 .facts {
        min-height:100%;
     display:-webkit-box;
@@ -91,29 +143,9 @@ button:active, button:focus {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      /*border:1px solid yellow;*/
    }
 
-@media screen and (min-width:769px) {
-    .text-container {
-       width: 60%;
-       margin:0 5%;
-    }
-}
-
-
-@media screen and (max-width:768px) {
-    .text-container {
-        display: none;
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0;
-          background-color: rgba(0, 0, 0, 0.7);
-          z-index: 1000;
-          overflow: auto;
-    }
-}
 
 .machine-container {
    position: relative;
@@ -139,6 +171,7 @@ button:active, button:focus {
    display: none;
    width: 90%;
    max-height: 90%;
+   /*border:1px solid red;*/
 }
 
 
@@ -149,7 +182,7 @@ button:active, button:focus {
    border-radius: 10px;
    overflow-y: auto;
    overflow-x:hidden;
-   margin-bottom: 10%;
+   margin-bottom: 3%;
 }
 
 .close-fact {
@@ -340,6 +373,10 @@ button:active, button:focus {
 
 .fact-screen {
    display: none;
+}
+
+.fact-screen-mobile4 {
+   display:none;
 }
 
 .graph {
