@@ -1,8 +1,36 @@
 var currentIndex = 0;
+var $slides = $('.single-fact-container');       // Create jQuery object to hold all slides
+var buttonArray  = [];                    // Create array to hold navigation buttons
+
+function changeActiveClasses(newIndex){
+    buttonArray[currentIndex].removeClass('active'); // Remove class from item
+    buttonArray[newIndex].addClass('active');        // Add class to new item
+    $slides.eq(currentIndex).removeClass('active-fact');
+    $slides.eq(newIndex).addClass('active-fact');
+    $('.valvePart').removeClass( 'rotate' );
+    $('.valvePart').eq(newIndex).addClass('rotate');
+    currentIndex = newIndex;
+
+}
+
+function bellySlides(allSlides) {
+    var $activeSlide = allSlides.eq(0);
+    $activeSlide.show();
+    var $next = $activeSlide.next();
+    var timer = setInterval(function() {
+        $next.fadeIn(2000);
+        $activeSlide.hide();
+        $activeSlide = $next;
+        $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
+            $next = allSlides.eq(0):$activeSlide.next();
+    }, 2000);
+}
+
 
 $(document).ready(function() {
    var clicked = 0;
-
+    var runSlides = false;
+    
    $('.valve').click(function(e) {
       e.preventDefault();
       $('.top-valve').hide();
@@ -13,27 +41,27 @@ $(document).ready(function() {
       e.preventDefault();
       var info = $(this).find('.infoRef').attr('title');
       var screenframe = $(this).find('.screenRef').attr('title');
-      $('.part').removeClass( 'rotate' );
       $(this).find('.part').addClass('rotate');
       $('.active-fact').hide();
       $('.active-screen').hide();
       $('.machine').addClass('shake').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
             $(this).removeClass('shake');
         });
-        currentIndex =  $(info).index();
+       changeActiveClasses($(info).index());
        var isMobile = window.matchMedia("(max-width: 768px)").matches
        if (isMobile){
           $('.start-screen').show();
           $('.text-container').fadeIn(500);
           $('body').addClass('modal-open');
-          $('.single-fact-container').hide().removeClass('active-fact');
-          $(info).show().addClass('active-fact');
+          $('.single-fact-container').hide();
+          $(info).show();
           $('.screen-mobile').show();
 
       }else{
+          $('.text-container').css('display','block');
           $('.screen-mobile').hide();
             $(screenframe).fadeIn(500).show().addClass('active-screen');
-            $(info).fadeIn(500).show().addClass('active-fact');
+            $(info).fadeIn(500);
       }
    });
 
@@ -44,13 +72,19 @@ $(document).ready(function() {
    });
 
     $('.valve4').click(function(e){
-      bellySlides();
-   })
+      if (!runSlides){
+            bellySlides($('#screen4 .fact4slides'));
+            bellySlides($('#screen4-mobile .fact4-screen'));
+            runSlides = true;
+      }
+    })
 
     window.onresize = function() {
       if ($(window).width() > 768){
          $('body').removeClass('modal-open');
          $('.screen-mobile').hide();
+          $('.fact-screen').hide();
+          $('.fact-screen').eq(currentIndex).show();
       }else{
          $('.screen-mobile').show();
       }
@@ -70,18 +104,6 @@ $(document).ready(function() {
 
 });
 
-function bellySlides() {
-    var allSlides = $('#screen4 .fact4slides');
-    var $activeSlide = allSlides.eq(0);
-    $activeSlide.show();
-    var $next = $activeSlide.next();
-    var timer = setInterval(function() {
-        $next.fadeIn(2000);
-        $activeSlide.hide();
-        $activeSlide = $next;
-        console.log(allSlides.last().index());
-        $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
-            $next = allSlides.eq(0):$activeSlide.next();
 
-    }, 2000);
-}
+
+
