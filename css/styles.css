@@ -62,13 +62,6 @@ button:active, button:focus {
 }
 
 
-
-
-
-.block {
-   display: block;
-}
-
 .orange {
    font-weight: bold;
    color: #FF6200;
@@ -664,72 +657,4 @@ button:active, button:focus {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
    }
-}
-
-/*.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    animation-name:fadein;
-    animation-iteration-count: 1;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-in-out;
-}*/
-
-
-@-webkit-keyframes fadein{
-    from {
-        opacity:0
-    }
-
-    to {
-        opacity:1
-    }
-
-}
-
-
-@keyframes fadein{
-    from {
-        opacity:0
-    }
-
-    to {
-        opacity:1
-    }
-
-}
-
-@-webkit-keyframes fadeout{
-    from {
-        opacity:1
-    }
-
-    to {
-        opacity:0
-    }
-
-}
-
-@keyframes fadeout{
-    from {
-        opacity:1
-    }
-
-    to {
-        opacity:0
-    }
-
-}
-
-.fadeout {
-        -webkit-animation-name:fadeout;
-                animation-name:fadeout;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-duration: 0.7s;
-            animation-duration: 0.7s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
 }
