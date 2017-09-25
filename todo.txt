@@ -1,8 +1,12 @@
 PRORITY:
 - animation of the top-tap falling
-- slides on mobile (arrows and dot navigation)
-- swiping on mobile
-- bug:after closing fact by swiping on mobile does not trigger modal closing script - effect:2 modals showing after next click on the valve
+- arrows
+- dot navigation
+- fact 4 slider on mobile
+- slider bugs
+- position of the facts (left margin?)
+
+
 
 
 Good to do
@@ -27,6 +31,7 @@ CHECK:
 - crossbrowser flexbox support check
 - text check (interpunction, missspellings in the org. content)
 - problems with ipad (web view on portrait - no facts) -fixed but checked only in browser imitating ipad
+- bug:after closing fact by swiping on mobile does not trigger modal closing script - effect:2 modals showing after next click on the valve
 
 
 
@@ -41,3 +46,6 @@ DONE:
 - flexbox justify-content not working on ipad
 - bug: smoke not triggering sometimes
 - slideshow on the belly
+- slides on mobile
+- swiping on mobile
+- open modal closes after resising
