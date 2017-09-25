@@ -17,6 +17,7 @@ Good to do
 - preloader?
 - code comments and cleaning
 - js:whole picture loading
+- dry
 
 
 THINGS TO ASK THEM:

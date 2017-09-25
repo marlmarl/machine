@@ -1,4 +1,6 @@
 var currentIndex = 0;
+var clicked = 0;
+
 var $slides = $('.single-fact-container');       // Create jQuery object to hold all slides
 var buttonArray  = [];                    // Create array to hold navigation buttons
 
@@ -28,7 +30,6 @@ function bellySlides(allSlides) {
 
 
 $(document).ready(function() {
-   var clicked = 0;
     var runSlides = false;
     
    $('.valve').click(function(e) {
@@ -81,10 +82,14 @@ $(document).ready(function() {
 
     window.onresize = function() {
       if ($(window).width() > 768){
+          $('.text-container').show();
          $('body').removeClass('modal-open');
          $('.screen-mobile').hide();
           $('.fact-screen').hide();
-          $('.fact-screen').eq(currentIndex).show();
+          if (clicked == 1){
+                $('.active-screen').hide();
+              $('.fact-screen').eq(currentIndex).addClass('active-screen').show();
+          }
       }else{
          $('.screen-mobile').show();
       }
