@@ -1,5 +1,8 @@
+var currentIndex = 0;
+
 $(document).ready(function() {
    var clicked = 0;
+
    $('.valve').click(function(e) {
       e.preventDefault();
       $('.top-valve').hide();
@@ -17,12 +20,14 @@ $(document).ready(function() {
       $('.machine').addClass('shake').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
             $(this).removeClass('shake');
         });
+        currentIndex =  $(info).index();
        var isMobile = window.matchMedia("(max-width: 768px)").matches
        if (isMobile){
           $('.start-screen').show();
           $('.text-container').fadeIn(500);
           $('body').addClass('modal-open');
-          $(info).show();
+          $('.single-fact-container').hide().removeClass('active-fact');
+          $(info).show().addClass('active-fact');
           $('.screen-mobile').show();
 
       }else{
@@ -41,18 +46,16 @@ $(document).ready(function() {
     $('.valve4').click(function(e){
       bellySlides();
    })
-    
-    window.onresize = function() {  
-        if ($(window).width() < 768)
-            $('.text-container').hide();
-        else
-            $('.text-container').show();
-        $('body').removeClass('modal-open');
-        $('.single-fact-container').hide();
-        $('.part').removeClass( 'rotate' );
-        $('.screen-mobile').hide();
+
+    window.onresize = function() {
+      if ($(window).width() > 768){
+         $('body').removeClass('modal-open');
+         $('.screen-mobile').hide();
+      }else{
+         $('.screen-mobile').show();
+      }
     }
-    
+
 
 
    function load() {

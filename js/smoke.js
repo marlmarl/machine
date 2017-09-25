@@ -16,7 +16,7 @@ var canvas = document.getElementById("canvas"),
 
 canvas.height =  document.getElementById("canvas").offsetHeight;
 canvas.width = document.getElementById("canvas").offsetWidth;
-console.log(canvas.height);
+
 var parts = [],
     minSpawnTime = 20,
     lastTime = new Date().getTime(),
