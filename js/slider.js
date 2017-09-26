@@ -48,6 +48,7 @@ $('.slider').each(function() {
 
     $('.single-fact-container').swipe({
         swipe:function(event, direction, distance, duration, fingerCount){
+           $button.removeClass('active');
             if (direction === "left"){
                 if (currentIndex < ($slides.length - 1)) {
                     move(currentIndex + 1);
@@ -59,7 +60,7 @@ $('.slider').each(function() {
                 if (currentIndex > 0) {
                     move(currentIndex - 1);
                 } else {
-                    move($slides.length - 1);                         
+                    move($slides.length - 1);
                 }
             }
         },

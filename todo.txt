@@ -3,12 +3,12 @@ PRORITY:
 - position of the facts (left margin?)
 - animation of the top-tap falling
 - arrow navigation
-- append buttons?
 - scrolling modals on mobile
-- touch
 - do not loop the slides
-- check the double dots (clicked/swiped);
 - legends
+
+----
+check the double dots (clicked/swiped)
 
 
 
@@ -22,6 +22,7 @@ Good to do
 - js:whole picture loading
 - dry
 - validators
+- append buttons?
 
 
 THINGS TO ASK THEM:

@@ -27,6 +27,7 @@ body {
    font-family: INGMe, Arial;
    font-weight: normal;
    color: #333333;
+   overflow:hidden;
 }
 
 h1, h2, h3 {
@@ -432,9 +433,9 @@ button:active, button:focus {
 }
 
    .fact4-screen{
-        display: none; 
+        display: none;
     }
-	
+
 .fact4slides {
    display:none;
 }
