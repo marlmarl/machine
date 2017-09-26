@@ -28,6 +28,7 @@ body {
    font-weight: normal;
    color: #333333;
    overflow:hidden;
+   border:1px solid green;
 }
 
 h1, h2, h3 {
