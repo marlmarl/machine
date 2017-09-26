@@ -1,12 +1,12 @@
 var currentIndex = 0;
 var clicked = 0;
 
-var $slides = $('.single-fact-container');       // Create jQuery object to hold all slides
-var buttonArray  = [];                    // Create array to hold navigation buttons
+var $slides = $('.single-fact-container');
+var buttonArray  = [];
 
 function changeActiveClasses(newIndex){
-    buttonArray[currentIndex].removeClass('active'); // Remove class from item
-    buttonArray[newIndex].addClass('active');        // Add class to new item
+    buttonArray[currentIndex].removeClass('active'); 
+    buttonArray[newIndex].addClass('active');
     $slides.eq(currentIndex).removeClass('active-fact');
     $slides.eq(newIndex).addClass('active-fact');
     $('.valvePart').removeClass( 'rotate' );

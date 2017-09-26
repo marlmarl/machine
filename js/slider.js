@@ -48,7 +48,7 @@ $('.slider').each(function() {
 
     $('.single-fact-container').swipe({
         swipe:function(event, direction, distance, duration, fingerCount){
-           $button.removeClass('active');
+            buttonArray[currentIndex].removeClass('active');
             if (direction === "left"){
                 if (currentIndex < ($slides.length - 1)) {
                     move(currentIndex + 1);
