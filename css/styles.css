@@ -55,6 +55,11 @@ button:active, button:focus {
    outline: 0;
 }
 
+sup {
+    vertical-align: super;
+    font-size: 80%;
+}
+
 .modal-open {
    overflow:hidden;
 }
@@ -322,18 +327,10 @@ button:active, button:focus {
 }
 
 .indicator1-img {
-   -webkit-animation-name: rotate225;
-           animation-name: rotate225;
-   -webkit-animation-duration: 1s;
-           animation-duration: 1s;
-   -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
-   -webkit-animation-timing-function: linear;
-           animation-timing-function: linear;
-   -webkit-animation-direction: reverse;
-           animation-direction: reverse;
-
+   animation: rotate225 1s linear infinite forwards;
 }
+
+
 
 .indicator2-img {
    -webkit-animation-name: rotate;
@@ -643,9 +640,11 @@ button:active, button:focus {
    transform: rotate(225deg);
 
    }
-   100% {
+
+   to {
       -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+   transform: rotate(0deg);
+
    }
 }
 
