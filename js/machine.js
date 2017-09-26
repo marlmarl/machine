@@ -12,7 +12,6 @@ function changeActiveClasses(newIndex) {
    $('.valvePart').removeClass('rotate');
    $('.valvePart').eq(newIndex).addClass('rotate');
    currentIndex = newIndex;
-
 }
 
 function bellySlides(allSlides) {
@@ -28,7 +27,6 @@ function bellySlides(allSlides) {
    }, 2000);
 }
 
-
 $(document).ready(function() {
    var runSlides = false;
 
@@ -36,7 +34,7 @@ $(document).ready(function() {
       e.preventDefault();
       if (clicked < 1) {
          $('.top-valve').addClass('pop');
-         render();
+         renderSmoke();
       }
       clicked = 1;
       e.preventDefault();
@@ -53,7 +51,7 @@ $(document).ready(function() {
       if (isMobile) {
          $('.start-screen').show();
          $('.text-container').fadeIn(500);
-        $('body').css('height',window.innerHeight);  
+         $('body').css('height', window.innerHeight);
          $('body').addClass('modal-open');
          $('.single-fact-container').hide();
          $(info).show();
@@ -71,7 +69,7 @@ $(document).ready(function() {
       $('.text-container').fadeOut(500);
       $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
-        $('body').css('height','100%');  
+      $('body').css('height', '100%');
    });
 
    $('.valve4').click(function(e) {
@@ -84,7 +82,7 @@ $(document).ready(function() {
 
    window.onresize = function() {
       if ($(window).width() > 768) {
-        $('body').css('height','100%');  
+         $('body').css('height', '100%');
          $('.text-container').show();
          $('body').removeClass('modal-open');
          $('.screen-mobile').hide();
@@ -94,21 +92,8 @@ $(document).ready(function() {
             $('.fact-screen').eq(currentIndex).addClass('active-screen').show();
          }
       } else {
-        $('body').css('height',window.innerHeight);  
+         $('body').css('height', window.innerHeight);
          $('.screen-mobile').show();
       }
    }
-
-
-
-   function load() {
-      if (loading) {
-         setTimeout(load, 100);
-      } else {
-         render();
-      }
-   }
-
-
-
 });

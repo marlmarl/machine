@@ -1,11 +1,7 @@
 PRORITY:
 - arrow navigation
-- scrolling modals on mobile!
 - legends
 - whole pic loading
-
-
-
 
 
 Good to do
@@ -59,3 +55,4 @@ DONE:
 - do not loop the slides
 - check the double dots (clicked/swiped)
 - edo's request
+- scrolling modals on mobile!

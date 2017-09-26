@@ -32,7 +32,7 @@ function spawn() {
   }
 }
 
-function render() {
+function renderSmoke() {
   if(loading){
     load();
     return false;
@@ -60,7 +60,7 @@ function render() {
     }
   }
   spawn();
-  requestAnimationFrame(render);
+  requestAnimationFrame(renderSmoke);
 }
 
 function smoke(x, y, index) {
@@ -111,4 +111,12 @@ function resizeMe() {
     maxLifeTime = canvas.height / (50) * 1000;
     emitterX = canvas.width / 2;
     emitterY = canvas.height;
+}
+
+function load() {
+   if (loading) {
+      setTimeout(load, 100);
+   } else {
+      renderSmoke();
+   }
 }

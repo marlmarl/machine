@@ -157,7 +157,7 @@ sup {
     }
 
     .slide-viewer {
-        position: relative; /* needed for IE7 */
+        position: relative;
         height:100%;
 
     }
@@ -260,23 +260,7 @@ sup {
       margin: 0 auto;
       ;
    }
-   .article {
-      margin: 0 5%;
-   }
-   .infographic-chapeau {
-      margin: 0;
-      font-size: 0.9em;
-   }
-   .infographic-title {
-      font-size: 2em;
-      margin: 0;
-      line-height: 1em;
-      margin-bottom: 0.1em;
-   }
-   .infographic-subtitle {
-      font-size: 1em;
-      margin: 0;
-   }
+   
 }
 
 
