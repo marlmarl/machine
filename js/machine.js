@@ -52,7 +52,9 @@ $(document).ready(function() {
       var isMobile = window.matchMedia("(max-width: 768px)").matches
       if (isMobile) {
          $('.start-screen').show();
+         console.log($("body").offsetHeight);
          $('.text-container').fadeIn(500);
+         console.log($(".text-container")[0].offsetHeight);
          $('body').addClass('modal-open');
          $('.single-fact-container').hide();
          $(info).show();

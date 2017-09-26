@@ -1,8 +1,10 @@
 PRORITY:
 - arrow navigation
-- scrolling modals on mobile
+- scrolling modals on mobile!
 - legends
-- check the double dots (clicked/swiped)
+- whole pic loading
+- edo's request
+
 
 
 
@@ -55,3 +57,4 @@ DONE:
 - animation of the top-tap popping
 - position of the facts (text-container margin; facts width:80%)
 - do not loop the slides
+- check the double dots (clicked/swiped)
