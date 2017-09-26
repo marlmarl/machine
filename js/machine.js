@@ -53,6 +53,7 @@ $(document).ready(function() {
       if (isMobile) {
          $('.start-screen').show();
          $('.text-container').fadeIn(500);
+        $('body').css('height',window.innerHeight);  
          $('body').addClass('modal-open');
          $('.single-fact-container').hide();
          $(info).show();
