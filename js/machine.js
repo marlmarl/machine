@@ -54,7 +54,11 @@ $(document).ready(function() {
          $('.start-screen').show();
          console.log($("body").offsetHeight);
          $('.text-container').fadeIn(500);
+<<<<<<< HEAD
          console.log($(".text-container")[0].offsetHeight);
+=======
+        $('body').css('height',window.innerHeight);  
+>>>>>>> 7c933f5a029744b508afd7046755ee8f2d1d7ff0
          $('body').addClass('modal-open');
          $('.single-fact-container').hide();
          $(info).show();
