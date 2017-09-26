@@ -73,7 +73,8 @@ $('.slider').each(function() {
             }*/
          }
       },
-      threshold: 100
+      threshold: 100,
+       allowPageScroll:"auto"
    });
 
 });

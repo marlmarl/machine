@@ -71,6 +71,7 @@ $(document).ready(function() {
       $('.text-container').fadeOut(500);
       $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
+        $('body').css('height','100%');  
    });
 
    $('.valve4').click(function(e) {
@@ -83,6 +84,7 @@ $(document).ready(function() {
 
    window.onresize = function() {
       if ($(window).width() > 768) {
+        $('body').css('height','100%');  
          $('.text-container').show();
          $('body').removeClass('modal-open');
          $('.screen-mobile').hide();
@@ -92,6 +94,7 @@ $(document).ready(function() {
             $('.fact-screen').eq(currentIndex).addClass('active-screen').show();
          }
       } else {
+        $('body').css('height',window.innerHeight);  
          $('.screen-mobile').show();
       }
    }
