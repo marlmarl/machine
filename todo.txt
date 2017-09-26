@@ -1,12 +1,10 @@
 PRORITY:
+
+- fact 4 slider on mobile - fucked up
+- position of the facts (left margin?)
 - animation of the top-tap falling
 - arrows
-- dot navigation
-- fact 4 slider on mobile
-- slider bugs
-- position of the facts (left margin?)
-
-
+- append buttons
 
 
 Good to do
@@ -18,6 +16,7 @@ Good to do
 - code comments and cleaning
 - js:whole picture loading
 - dry
+- validators
 
 
 THINGS TO ASK THEM:
@@ -29,7 +28,7 @@ CHECK:
 - client prefixes before every send!!!!
 - machine shaking shakes the modal on web imitating mobile
 - woff2 - caniuse
-- crossbrowser flexbox support check
+- crossbrowser check
 - text check (interpunction, missspellings in the org. content)
 - problems with ipad (web view on portrait - no facts) -fixed but checked only in browser imitating ipad
 - bug:after closing fact by swiping on mobile does not trigger modal closing script - effect:2 modals showing after next click on the valve
@@ -49,4 +48,6 @@ DONE:
 - slideshow on the belly
 - slides on mobile
 - swiping on mobile
+- slider/swiping bugs (swiping on web, double facts after resising, machine goes let after resizing)
 - open modal closes after resising
+- dot navigation

@@ -31,7 +31,7 @@ function bellySlides(allSlides) {
 
 $(document).ready(function() {
     var runSlides = false;
-    
+
    $('.valve').click(function(e) {
       e.preventDefault();
       $('.top-valve').hide();
@@ -108,7 +108,3 @@ $(document).ready(function() {
 
 
 });
-
-
-
-
