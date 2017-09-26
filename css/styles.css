@@ -431,6 +431,10 @@ button:active, button:focus {
            align-items: flex-end;
 }
 
+   .fact4-screen{
+        display: none; 
+    }
+	
 .fact4slides {
    display:none;
 }
