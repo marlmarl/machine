@@ -22,13 +22,12 @@ html {
 
 body {
    max-width: 850px;
-   height: 100%;
    margin: 0;
    font-family: INGMe, Arial;
    font-weight: normal;
    color: #333333;
    overflow:hidden;
-   border:1px solid green;
+   box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -60,6 +59,25 @@ sup {
     font-size: 80%;
 }
 
+/*dot navigation*/
+
+.slide-buttons {
+  text-align: center;
+}
+
+.slide-btn {
+  border: none;
+  background: none;
+  color:  rgba(255, 255, 255, 0.8);
+  font-size: 400%;
+  line-height: 1em;}
+
+.slide-btn.active {
+  color: #ff6200;
+  cursor: pointer;
+}
+
+
 .modal-open {
    overflow:hidden;
 }
@@ -71,7 +89,6 @@ sup {
 }
 
 .infographic-container {
-   border:1px solid #ff6200;
    display: -webkit-box;
    display: -ms-flexbox;
    display: -webkit-flex;
@@ -103,6 +120,7 @@ sup {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
+   flex-direction: column;
    }
 
 
@@ -727,23 +745,4 @@ sup {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
    }
-}
-
-
-
-
-.slide-buttons {
-  text-align: center;
-}
-
-.slide-btn {
-  border: none;
-  background: none;
-  color:  rgba(255, 255, 255, 0.8);
-  font-size: 400%;
-  line-height: 1em;}
-
-.slide-btn.active {
-  color: #ff6200;
-  cursor: pointer;
 }
