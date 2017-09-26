@@ -1,15 +1,20 @@
 PRORITY:
 
-- fact 4 slider on mobile - fucked up
 - position of the facts (left margin?)
 - animation of the top-tap falling
-- arrows
-- append buttons
+- arrow navigation
+- append buttons?
+- scrolling modals on mobile
+- touch
+- do not loop the slides
+- check the double dots (clicked/swiped);
+- legends
+
 
 
 Good to do
 - ux - better indication that the valves are clickable
-- improving the animation of indicators
+- improving the animation of indicators - start with the smoke
 - remove selection
 - focus outline
 - preloader?
@@ -48,6 +53,7 @@ DONE:
 - slideshow on the belly
 - slides on mobile
 - swiping on mobile
-- slider/swiping bugs (swiping on web, double facts after resising, machine goes let after resizing)
-- open modal closes after resising
+- slider/swiping bugs (swiping on web, double facts after resizing, machine goes let after resizing)
+- open modal closes after resizing
 - dot navigation
+- fact 4 slider on mobile - fucked up
