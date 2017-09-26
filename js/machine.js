@@ -52,13 +52,8 @@ $(document).ready(function() {
       var isMobile = window.matchMedia("(max-width: 768px)").matches
       if (isMobile) {
          $('.start-screen').show();
-         console.log($("body").offsetHeight);
          $('.text-container').fadeIn(500);
-<<<<<<< HEAD
-         console.log($(".text-container")[0].offsetHeight);
-=======
         $('body').css('height',window.innerHeight);  
->>>>>>> 7c933f5a029744b508afd7046755ee8f2d1d7ff0
          $('body').addClass('modal-open');
          $('.single-fact-container').hide();
          $(info).show();
@@ -76,6 +71,7 @@ $(document).ready(function() {
       $('.text-container').fadeOut(500);
       $(this).closest('.single-fact-container').hide();
       $('body').removeClass('modal-open');
+        $('body').css('height','100%');  
    });
 
    $('.valve4').click(function(e) {
@@ -88,6 +84,7 @@ $(document).ready(function() {
 
    window.onresize = function() {
       if ($(window).width() > 768) {
+        $('body').css('height','100%');  
          $('.text-container').show();
          $('body').removeClass('modal-open');
          $('.screen-mobile').hide();
@@ -97,6 +94,7 @@ $(document).ready(function() {
             $('.fact-screen').eq(currentIndex).addClass('active-screen').show();
          }
       } else {
+        $('body').css('height',window.innerHeight);  
          $('.screen-mobile').show();
       }
    }
