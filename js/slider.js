@@ -3,7 +3,6 @@
 $('.slider').each(function() {
   var $this   = $(this);
   var $group  = $this.find('.slide-viewer');
-  var timeout;     //needed?
 
   function move(newIndex) {
     var animateLeft, slideLeft;
@@ -48,7 +47,7 @@ $('.slider').each(function() {
 
     $('.single-fact-container').swipe({
         swipe:function(event, direction, distance, duration, fingerCount){
-            buttonArray[currentIndex].removeClass('active');
+           $(".slide-btn").removeClass('active');
             if (direction === "left"){
                 if (currentIndex < ($slides.length - 1)) {
                     move(currentIndex + 1);
