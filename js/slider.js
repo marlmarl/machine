@@ -47,10 +47,11 @@ $('.slider').each(function() {
 
     $('.single-fact-container').swipe({
         swipe:function(event, direction, distance, duration, fingerCount){
-           $(".slide-btn").removeClass('active');
+
             if (direction === "left"){
                 if (currentIndex < ($slides.length - 1)) {
                     move(currentIndex + 1);
+                    $(".slide-btn").removeClass('active');
                 } else {
                     move(0);
                 }
@@ -58,6 +59,7 @@ $('.slider').each(function() {
             if (direction === "right"){
                 if (currentIndex > 0) {
                     move(currentIndex - 1);
+                    $(".slide-btn").removeClass('active');
                 } else {
                     move($slides.length - 1);
                 }
