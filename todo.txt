@@ -1,14 +1,8 @@
 PRORITY:
-
-- position of the facts (left margin?)
-- animation of the top-tap falling
 - arrow navigation
 - scrolling modals on mobile
-- do not loop the slides
 - legends
-
-----
-check the double dots (clicked/swiped)
+- check the double dots (clicked/swiped)
 
 
 
@@ -58,3 +52,6 @@ DONE:
 - open modal closes after resizing
 - dot navigation
 - fact 4 slider on mobile - fucked up
+- animation of the top-tap popping
+- position of the facts (text-container margin; facts width:80%)
+- do not loop the slides

@@ -18,7 +18,7 @@ canvas.height =  document.getElementById("canvas").offsetHeight;
 canvas.width = document.getElementById("canvas").offsetWidth;
 
 var parts = [],
-    minSpawnTime = 20,
+    minSpawnTime = -100,
     lastTime = new Date().getTime(),
     maxLifeTime = canvas.height / (50) * 1000,
     emitterX = canvas.width / 2,
@@ -75,7 +75,7 @@ function smoke(x, y, index) {
   this.startLife = new Date().getTime();
   this.lifeTime = 0;
 
-  this.velY = -1 - (Math.random() * 0.5);
+  this.velY = -1 - (Math.random() * 5);
   this.velX = (Math.floor(Math.random() * (-6) + 3) /2)*0.5;
 }
 
