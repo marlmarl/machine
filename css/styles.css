@@ -27,7 +27,7 @@ body {
    font-weight: normal;
    color: #333333;
    overflow:hidden;
-   border:1px solid green;
+   box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -89,7 +89,6 @@ sup {
 }
 
 .infographic-container {
-   border:1px solid #ff6200;
    display: -webkit-box;
    display: -ms-flexbox;
    display: -webkit-flex;

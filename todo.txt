@@ -3,7 +3,7 @@ PRORITY:
 - scrolling modals on mobile!
 - legends
 - whole pic loading
-- edo's request
+
 
 
 
@@ -58,3 +58,4 @@ DONE:
 - position of the facts (text-container margin; facts width:80%)
 - do not loop the slides
 - check the double dots (clicked/swiped)
+- edo's request
