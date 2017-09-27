@@ -54,9 +54,16 @@ button:active, button:focus {
    outline: 0;
 }
 
-.modal-open {
-   overflow:hidden;
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
+
 
 .orange {
    font-weight: bold;
@@ -596,21 +603,6 @@ button:active, button:focus {
    }
 }
 
-@keyframes rotate225 {
-   from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-   }
-
-   to {
-      -webkit-transform: rotate(225deg);
-      transform: rotate(225deg);
-   }
-}
-
-.rotate225 {
-   animation: rotate225 1s 1 forwards;
-}
 .rotate {
    -webkit-animation-name: rotate;
    animation-name: rotate;
@@ -694,7 +686,7 @@ button:active, button:focus {
    }
 }
 
-@keyframes indicator {
+@keyframes indicator1move {
    from {
       transform: rotate(225deg);
    }
@@ -706,10 +698,63 @@ button:active, button:focus {
 
 }
 
-.indicator-move {
-   animation-name: indicator;
+@keyframes indicator2move {
+   from {
+      transform: rotate(180deg);
+   }
+
+   to {
+      transform:rotate(225deg);
+
+   }
+
+}
+
+.indicator1-move {
+   animation-name: indicator1move;
    animation-duration: 0.2s;
    animation-iteration-count: infinite;
    animation-timing-function:linear;
    animation-direction: alternate;
+}
+
+.indicator2-move {
+   animation-name: indicator2move;
+   animation-duration: 0.2s;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear;
+   animation-direction: alternate;
+}
+
+
+@keyframes rotate180 {
+   from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   to {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+   }
+}
+
+.rotate180 {
+   animation: rotate180 1s 1 forwards;
+}
+
+@keyframes rotate225 {
+   from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+
+   to {
+      -webkit-transform: rotate(225deg);
+      transform: rotate(225deg);
+   }
+}
+
+.rotate225 {
+   animation: rotate225 1s 1 forwards;
 }

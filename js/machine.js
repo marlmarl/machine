@@ -35,10 +35,13 @@ $(document).ready(function() {
       if (clicked < 1) {
          $('.top-valve').addClass('pop');
          renderSmoke();
-         $('.indicator-img').addClass('rotate225');
+         $('.indicator1-img').addClass('rotate225');
+         $('.indicator2-img').addClass('rotate180');
          setTimeout(function(){
-            $('.indicator-img').removeClass('rotate225');
-            $('.indicator-img').addClass('indicator-move');
+            $('.indicator1-img').removeClass('rotate225');
+            $('.indicator2-img').removeClass('rotate180');
+            $('.indicator1-img').addClass('indicator1-move');
+            $('.indicator2-img').addClass('indicator2-move');
 
          }, 900);
       }
@@ -58,7 +61,6 @@ $(document).ready(function() {
          $('.start-screen').show();
          $('.text-container').fadeIn(500);
          $('body').css('height', window.innerHeight);
-         $('body').addClass('modal-open');
          $('.single-fact-container').hide();
          $(info).show();
          $('.screen-mobile').show();
@@ -74,7 +76,6 @@ $(document).ready(function() {
    $('.close-fact').click(function(e) {
       $('.text-container').fadeOut(500);
       $(this).closest('.single-fact-container').hide();
-      $('body').removeClass('modal-open');
       $('body').css('height', '100%');
    });
 
@@ -90,7 +91,6 @@ $(document).ready(function() {
       if ($(window).width() > 768) {
          $('body').css('height', '100%');
          $('.text-container').show();
-         $('body').removeClass('modal-open');
          $('.screen-mobile').hide();
          $('.fact-screen').hide();
          if (clicked == 1) {
