@@ -1,6 +1,6 @@
 var currentIndex = 0;
 var clicked = 0;
-
+var runSlides = false;
 var $slides = $('.single-fact-container');
 var buttonArray = [];
 
@@ -11,6 +11,13 @@ function changeActiveClasses(newIndex) {
    $slides.eq(newIndex).addClass('active-fact');
    $('.valvePart').removeClass('rotate');
    $('.valvePart').eq(newIndex).addClass('rotate');
+    if (newIndex == 3){
+        if (!runSlides) {
+            bellySlides($('#screen4 .fact4slides'));
+            bellySlides($('#screen4-mobile .fact4-screen'));
+            runSlides = true;
+        }
+    }
    currentIndex = newIndex;
 }
 
@@ -28,7 +35,6 @@ function bellySlides(allSlides) {
 }
 
 $(document).ready(function() {
-   var runSlides = false;
 
    $('.valve').click(function(e) {
       e.preventDefault();
@@ -80,14 +86,6 @@ $(document).ready(function() {
       $(this).closest('.single-fact-container').hide();
       $('body').css('height', '100%');
    });
-
-   $('.valve4').click(function(e) {
-      if (!runSlides) {
-         bellySlides($('#screen4 .fact4slides'));
-         bellySlides($('#screen4-mobile .fact4-screen'));
-         runSlides = true;
-      }
-   })
 
    window.onresize = function() {
       if ($(window).width() > 768) {
