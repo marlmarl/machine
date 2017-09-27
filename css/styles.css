@@ -449,6 +449,21 @@ button:active, button:focus {
 
 .valve1 {
    top: 19%;
+   box-sizing: border-box;
+}
+
+.valve1 img {
+   border-radius: 50%;
+   box-shadow: 0 0 9px #333;
+   animation-name: glow;
+   animation-duration:1s;
+   animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes glow {
+  from { box-shadow: 0 0 9px #ffffff; }
+  50% { box-shadow: 0 0 25px #ff6200; }
+  to { box-shadow: 0 0 9px #ffffff; }
 }
 
 .valve2 {
