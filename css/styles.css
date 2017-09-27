@@ -57,7 +57,7 @@ button:active, button:focus {
 .noselect {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
-     -khtml-user-select: none; 
+     -khtml-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
@@ -411,6 +411,30 @@ button:active, button:focus {
    width: 14.5%;
    height: auto;
 }
+
+.valve1 {
+   animation-name: pulse;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+
+
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 
 .top-valve {
    position: absolute;
