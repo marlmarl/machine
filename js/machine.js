@@ -30,6 +30,11 @@ function bellySlides(allSlides) {
 $(document).ready(function() {
    var runSlides = false;
 
+   if (currentIndex = 3) {
+      bellySlides($('#screen4-mobile .fact4-screen'));
+      runSlides = true;   
+   }
+
    $('.valve').click(function(e) {
       e.preventDefault();
       if (clicked < 1) {
