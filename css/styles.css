@@ -59,6 +59,7 @@ sup {
     font-size: 80%;
 }
 
+
 /*dot navigation*/
 
 .slide-buttons {
@@ -77,7 +78,10 @@ sup {
   cursor: pointer;
 }
 
+.slider-arrow {
 
+
+}
 .modal-open {
    overflow:hidden;
 }
@@ -108,22 +112,15 @@ sup {
     width:100%;
     height:100%;
     overflow: hidden;
-
-    display:-webkit-box;
-   display:-webkit-flex;
-   display:-ms-flexbox;
    display:flex;
-          -ms-flex-pack: center;
-              -webkit-justify-content: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-   flex-direction: column;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-around;
    }
 
-
+.slider-arrow {
+   margin:0 2px;
+}
 
 @media screen and (min-width:769px) {
     .text-container {
@@ -260,7 +257,7 @@ sup {
       margin: 0 auto;
       ;
    }
-   
+
 }
 
 
