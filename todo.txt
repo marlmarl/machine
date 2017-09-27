@@ -3,6 +3,7 @@ PRORITY:
 - document.ready();
 - font-sizes chceck
 - indicator animation
+- animation cleaning
 
 
 

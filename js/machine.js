@@ -24,7 +24,7 @@ function bellySlides(allSlides) {
       $activeSlide = $next;
       $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
          $next = allSlides.eq(0) : $activeSlide.next();
-   }, 2000);
+   }, 1500);
 }
 
 $(document).ready(function() {
@@ -35,6 +35,12 @@ $(document).ready(function() {
       if (clicked < 1) {
          $('.top-valve').addClass('pop');
          renderSmoke();
+         $('.indicator-img').addClass('rotate225');
+         setTimeout(function(){
+            $('.indicator-img').removeClass('rotate225');
+            $('.indicator-img').addClass('indicator-move');
+
+         }, 900);
       }
       clicked = 1;
       e.preventDefault();
