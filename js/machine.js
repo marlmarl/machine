@@ -30,11 +30,6 @@ function bellySlides(allSlides) {
 $(document).ready(function() {
    var runSlides = false;
 
-   if (currentIndex = 3) {
-      bellySlides($('#screen4-mobile .fact4-screen'));
-      runSlides = true;   
-   }
-
    $('.valve').click(function(e) {
       e.preventDefault();
       if (clicked < 1) {
@@ -60,6 +55,7 @@ $(document).ready(function() {
       $('.machine').addClass('shake').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
          $(this).removeClass('shake');
       });
+
       changeActiveClasses($(info).index());
       var isMobile = window.matchMedia("(max-width: 768px)").matches
       if (isMobile) {

@@ -52,7 +52,6 @@ $('.slider').each(function() {
 
    $('.single-fact-container').swipe({
       swipe: function(event, direction, distance, duration, fingerCount) {
-         runSlides = false;
 
          if (direction === "left") {
             console.log(currentIndex);
