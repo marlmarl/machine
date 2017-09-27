@@ -119,7 +119,8 @@ sup {
    }
 
 .slider-arrow {
-   margin:0 2px;
+   display:none;
+   margin:0 4px;
 }
 
 @media screen and (min-width:769px) {
@@ -145,6 +146,10 @@ sup {
           background-color: rgba(0, 0, 0, 0.7);
           z-index: 1000;
           overflow: auto;
+    }
+
+    .slider-arrow {
+       display:block;
     }
 
     .slider{

@@ -68,4 +68,16 @@ $('.slider').each(function() {
       threshold: 100,
       allowPageScroll:"auto"
    });
+
+   $('.arrow-right').click(function(e) {
+      if (currentIndex < ($slides.length-1)){
+         move(currentIndex + 1);
+      }
+   });
+
+   $('.arrow-left').click(function(e) {
+      if (currentIndex > 0) {
+         move(currentIndex - 1);
+      }
+   });
 });
