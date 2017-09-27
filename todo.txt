@@ -2,15 +2,12 @@ PRORITY:
 - whole pic loading
 - document.ready();
 - font-sizes chceck
-- indicator animation
 - animation cleaning
 
 
 
 Good to do
 - ux - better indication that the valves are clickable
-- improving the animation of indicators - start with the smoke
-- remove selection
 - focus outline
 - preloader?
 - code comments and cleaning
@@ -59,3 +56,6 @@ DONE:
 - edo's request
 - scrolling modals on mobile!
 - arrow navigation
+- indicator animation change
+- improving the animation of indicators - start with the smoke
+- remove selection
