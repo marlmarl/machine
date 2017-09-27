@@ -54,38 +54,9 @@ button:active, button:focus {
    outline: 0;
 }
 
-sup {
-    vertical-align: super;
-    font-size: 80%;
-}
-
-
-/*dot navigation*/
-
-.slide-buttons {
-  text-align: center;
-}
-
-.slide-btn {
-  border: none;
-  background: none;
-  color:  rgba(255, 255, 255, 0.8);
-  font-size: 400%;
-  line-height: 1em;}
-
-.slide-btn.active {
-  color: #ff6200;
-  cursor: pointer;
-}
-
-.slider-arrow {
-
-
-}
 .modal-open {
    overflow:hidden;
 }
-
 
 .orange {
    font-weight: bold;
@@ -99,98 +70,30 @@ sup {
    display: flex;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
-       -ms-flex-direction: row;
-           -webkit-flex-direction: row;
-           flex-direction: row;
+   -ms-flex-direction: row;
+   -webkit-flex-direction: row;
+   flex-direction: row;
    -webkit-box-align: stretch;
    -webkit-align-items: stretch;
-       -ms-flex-align: stretch;
-           align-items: stretch;
+   -ms-flex-align: stretch;
+   align-items: stretch;
 }
 
+.text-container {
+   width: 60%;
+   margin:0;
+}
+
+/*INFOGRAPHIC TEXT SIDE*/
+
 .facts {
-    width:100%;
-    height:100%;
-    overflow: hidden;
+   width:100%;
+   height:100%;
+   overflow: hidden;
    display:flex;
    align-items: center;
    flex-direction: row;
    justify-content: space-around;
-   }
-
-.slider-arrow {
-   display:none;
-   margin:0 4px;
-}
-
-@media screen and (min-width:769px) {
-    .text-container {
-       width: 60%;
-       margin:0;
-    }
-
-    .slide-btn{
-        display: none;
-    }
-}
-
-
-@media screen and (max-width:768px) {
-    .text-container {
-        display: none;
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          bottom: 0;
-          background-color: rgba(0, 0, 0, 0.7);
-          z-index: 1000;
-          overflow: auto;
-    }
-
-    .slider-arrow {
-       display:block;
-    }
-
-    .slider{
-        height:70%;
-        width:90%;
-        position: relative;
-    }
-
-    .slide-viewer {
-        position: relative;
-        height:100%;
-
-    }
-
-    .single-fact-container{
-        display: none;
-        position: absolute;
-        margin-top:-5%;
-    }
-
-}
-
-.machine-container {
-   position: relative;
-   top: 0;
-   left: 0;
-   width: 40%;
-}
-
-#canvas {
-   position: absolute;
-   top: -22.5%;
-   left: -15.5%;
-   width: 130%;
-   height: 39%;
-   z-index: -1;
-}
-
-#smokeparticle {
-   display: none;
-   display: none;
 }
 
 .single-fact-container {
@@ -219,6 +122,59 @@ sup {
 }
 
 
+.slider-arrow {
+   display:none;
+   margin:0 4px;
+}
+
+/*dot navigation*/
+
+.slide-buttons {
+   text-align: center;
+}
+
+.slide-btn {
+   display:none;
+   border: none;
+   background: none;
+   color:  rgba(255, 255, 255, 0.8);
+   font-size: 400%;
+   line-height: 1em;
+}
+
+.slide-btn.active {
+   color: #ff6200;
+   cursor: pointer;
+}
+
+
+@media screen and (min-width:769px) {
+
+}
+
+
+/*INFOGRAPHIC MACHINE SIDE*/
+
+.machine-container {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 40%;
+}
+
+#canvas {
+   position: absolute;
+   top: -22.5%;
+   left: -15.5%;
+   width: 130%;
+   height: 39%;
+   z-index: -1;
+}
+
+#smokeparticle {
+   display: none;
+   display: none;
+}
 
 .machine {
    position: relative;
@@ -228,45 +184,12 @@ sup {
    margin-left: auto;
 }
 
+/*machine parts*/
+
 .machine-body {
    max-width: 254px;
    width: 100%;
 }
-
-@media screen and (max-width:768px) {
-   .infographic-container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              -webkit-flex-direction: column;
-              flex-direction: column;
-   }
-
-   .machine-container {
-      width: 100%;
-   }
-
-
-
-   .fact-screen {
-      display: none;
-   }
-
-   .close-fact {
-      display: block;
-   }
-   .fact-content {
-      margin: 10%;
-   }
-   .machine {
-      margin: 0 auto;
-      ;
-   }
-
-}
-
-
-/*------MACHINE-----*/
 
 .part {
    width: 100%;
@@ -295,6 +218,81 @@ sup {
    height: auto;
 
 }
+
+@media screen and (max-width:768px) {
+   .infographic-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+   }
+
+   .text-container {
+      width:100%;
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      overflow: auto;
+   }
+
+   .slider-arrow {
+      display:block;
+   }
+
+   .slider{
+      height:70%;
+      width:90%;
+      position: relative;
+   }
+
+   .slide-viewer {
+      position: relative;
+      height:100%;
+
+   }
+
+   .slide-btn {
+      display:inline;
+   }
+
+   .single-fact-container{
+      display: none;
+      position: absolute;
+      margin-top:-5%;
+   }
+
+   .machine-container {
+      width: 100%;
+   }
+
+
+
+   .fact-screen {
+      display: none;
+   }
+
+   .close-fact {
+      display: block;
+   }
+   .fact-content {
+      margin: 10%;
+   }
+   .machine {
+      margin: 0 auto;
+      ;
+   }
+
+}
+
+
+
+
 
 @keyframes pop{
 
@@ -338,14 +336,14 @@ sup {
 
 .indicator2-img {
    -webkit-animation-name: rotate;
-           animation-name: rotate;
+   animation-name: rotate;
    -webkit-animation-duration: 10s;
-           animation-duration: 10s;
+   animation-duration: 10s;
    -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
    -webkit-animation-timing-function: linear;
-           animation-timing-function: linear;
-            animation-play-state: paused;
+   animation-timing-function: linear;
+   animation-play-state: paused;
 }
 
 .belly {
@@ -407,8 +405,8 @@ sup {
    margin: 0 auto;
    margin-top: 10%;
    -ms-flex-pack: distribute;
-       -webkit-justify-content: space-around;
-           justify-content: space-around;
+   -webkit-justify-content: space-around;
+   justify-content: space-around;
 }
 
 .graph div p {
@@ -429,13 +427,13 @@ sup {
 
 .orange-frame p {
    -webkit-animation-name: downer;
-           animation-name: downer;
+   animation-name: downer;
    -webkit-animation-duration: 1s;
-           animation-duration: 1s;
+   animation-duration: 1s;
    -webkit-animation-timing-function: ease-in-out;
-           animation-timing-function: ease-in-out;
+   animation-timing-function: ease-in-out;
    -webkit-animation-iteration-count: 1;
-           animation-iteration-count: 1;
+   animation-iteration-count: 1;
 }
 
 .graph-separator {
@@ -453,13 +451,13 @@ sup {
 .fact3-graph {
    -webkit-box-align: end;
    -webkit-align-items: flex-end;
-       -ms-flex-align: end;
-           align-items: flex-end;
+   -ms-flex-align: end;
+   align-items: flex-end;
 }
 
-   .fact4-screen{
-        display: none;
-    }
+.fact4-screen{
+   display: none;
+}
 
 .fact4slides {
    display:none;
@@ -484,51 +482,29 @@ sup {
    background-color: #ff6200;
    width:25px;
    -webkit-animation-name:grow;
-           animation-name:grow;
+   animation-name:grow;
    -webkit-animation-duration: 1s;
-           animation-duration: 1s;
+   animation-duration: 1s;
    -webkit-animation-iteration-count: 1;
-           animation-iteration-count: 1;
+   animation-iteration-count: 1;
 
-}
-
-@-webkit-keyframes grow {
-  0% {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-100% {
-  -webkit-transform: scaleY(10%);
-          transform: scaleY(10%);
-}
-}
-
-@keyframes grow {
-  0% {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-100% {
-  -webkit-transform: scaleY(10%);
-          transform: scaleY(10%);
-}
 }
 
 
 
 .fact5-graph {
    -webkit-box-pack: justify;
-       -ms-flex-pack: justify;
-           -webkit-justify-content: space-between;
-           justify-content: space-between;
+   -ms-flex-pack: justify;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
    width: 90%;
 }
 
 .fact6-graph {
    -webkit-box-pack: center;
-       -ms-flex-pack: center;
-           -webkit-justify-content: center;
-           justify-content: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
    width: 70%;
 }
 
@@ -552,37 +528,37 @@ sup {
 
 .big-gear-img {
    -webkit-animation-name: rotate;
-           animation-name: rotate;
+   animation-name: rotate;
    -webkit-animation-duration: 10s;
-           animation-duration: 10s;
+   animation-duration: 10s;
    -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
    -webkit-animation-timing-function: linear;
-           animation-timing-function: linear;
+   animation-timing-function: linear;
    -webkit-animation-direction: reverse;
-           animation-direction: reverse;
+   animation-direction: reverse;
 }
 
 .small-gear-img {
    -webkit-animation-name: rotate;
-           animation-name: rotate;
+   animation-name: rotate;
    -webkit-animation-duration: 10s;
-           animation-duration: 10s;
+   animation-duration: 10s;
    -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
    -webkit-animation-timing-function: linear;
-           animation-timing-function: linear;
+   animation-timing-function: linear;
 }
 
 .valve img:hover {
    -webkit-animation-name: rotate;
-           animation-name: rotate;
+   animation-name: rotate;
    -webkit-animation-duration: 1s;
-           animation-duration: 1s;
+   animation-duration: 1s;
    -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
    -webkit-animation-timing-function: linear;
-           animation-timing-function: linear;
+   animation-timing-function: linear;
 }
 
 .valve1 {
@@ -610,7 +586,7 @@ sup {
 }
 
 
-/*keyframes*/
+/*KEYFRAMES AND ANIMATION CLASSES*/
 
 @-webkit-keyframes rotate {
    from {
@@ -641,26 +617,26 @@ sup {
    }
    50% {
       -webkit-transform: rotate(225deg);
-   transform: rotate(225deg);
+      transform: rotate(225deg);
 
    }
 
    to {
       -webkit-transform: rotate(0deg);
-   transform: rotate(0deg);
+      transform: rotate(0deg);
 
    }
 }
 
 .rotate {
    -webkit-animation-name: rotate;
-           animation-name: rotate;
+   animation-name: rotate;
    -webkit-animation-duration: 1s;
-           animation-duration: 1s;
+   animation-duration: 1s;
    -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
    -webkit-animation-timing-function: linear;
-           animation-timing-function: linear;
+   animation-timing-function: linear;
 }
 
 @-webkit-keyframes shaking {
@@ -709,7 +685,8 @@ sup {
 
 
 
-@-webkit-keyframes downer {
+
+@keyframes downer {
    from {
       -webkit-transform: translate3d(0, -50%, 0);
       transform: translate3d(0, -50%, 0);
@@ -722,13 +699,14 @@ sup {
 
 
 
-@keyframes downer {
-   from {
-      -webkit-transform: translate3d(0, -50%, 0);
-      transform: translate3d(0, -50%, 0);
+
+@keyframes grow {
+   0% {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
    }
-   to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+   100% {
+      -webkit-transform: scaleY(10%);
+      transform: scaleY(10%);
    }
 }

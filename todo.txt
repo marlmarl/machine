@@ -1,7 +1,9 @@
 PRORITY:
-- arrow navigation
-- legends
 - whole pic loading
+- document.ready();
+- font-sizes chceck
+- indicator animation
+
 
 
 Good to do
@@ -11,7 +13,6 @@ Good to do
 - focus outline
 - preloader?
 - code comments and cleaning
-- js:whole picture loading
 - dry
 - validators
 - append buttons?
@@ -19,7 +20,7 @@ Good to do
 
 THINGS TO ASK THEM:
 - no-js
-- footnotes
+- footnotes and legends
 
 
 CHECK:
@@ -56,3 +57,4 @@ DONE:
 - check the double dots (clicked/swiped)
 - edo's request
 - scrolling modals on mobile!
+- arrow navigation
