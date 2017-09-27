@@ -54,7 +54,6 @@ $('.slider').each(function() {
       swipe: function(event, direction, distance, duration, fingerCount) {
 
          if (direction === "left") {
-            console.log(currentIndex);
             if (currentIndex < ($slides.length-1)){
                move(currentIndex + 1);
             }
