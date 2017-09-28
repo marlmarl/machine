@@ -18,6 +18,20 @@ function changeActiveClasses(newIndex) {
             runSlides = true;
         }
     }
+    if (newIndex == 0){
+      $(".arrow-left").css('visibility', 'hidden');
+     }
+     else {
+        $(".arrow-left").css('visibility', 'visible');
+     }
+
+     if (newIndex == 5){
+       $(".arrow-right").css('visibility', 'hidden');
+      }
+      else {
+         $(".arrow-right").css('visibility', 'visible');
+      }
+      
    currentIndex = newIndex;
 }
 

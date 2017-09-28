@@ -6,6 +6,7 @@ PRORITY:
 
 
 
+
 Good to do
 - ux - better indication that the valves are clickable
 - focus outline
@@ -13,7 +14,6 @@ Good to do
 - code comments and cleaning
 - dry
 - validators
-- append buttons?
 
 
 THINGS TO ASK THEM:
@@ -59,3 +59,4 @@ DONE:
 - indicator animation change
 - improving the animation of indicators - start with the smoke
 - remove selection
+- remove arrows when not needed
