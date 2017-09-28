@@ -1,5 +1,23 @@
-Good to do have:
+CHANGES:
+- copy of fact 6
+Many traditional-style companies are now trying to build platform business models. ING believes a new platform giant could emerge in the internet of things, which could number 8.4 billion items by the end of the year.
+- Fact 4 is not easy to read  -> can we instead of ticker boxes have graphs with a percentage ( the first three graphs would be rather steep, whereas the last would be quite flat)
+Fact 4 right now: I would like to see the company name + number at the bottom both aligned to the left, but ignore if we switch to graphs.
+- Fact 5: instead of the number just sinking in, can it go up gradually, so it communicates the extreme high number
+- Bastien,
 
+Just got back from the test; Google Analytics tag is perfect.
+The vertical scrollbars are indeed gone, but for example (in our testcase) on iPhone 6, Fact 4 is a bit too long.
+Understandably, the users can swipe up/down – but that’s only if they ‘understand’ that there is more content below.
+
+How would you tackle this? Do we let it be like it is now, or is there a better solution to fix?
+Looking at traffic from iPhone 6/7 screens (375x667) – it’s quite a considerable amount.
+
+@Susan, or we can accept it and trust the users to be able to see that there is more themselves?
+
+
+
+GOOD TO HAVE:
 - focus outline
 - preloader?
 - code comments and cleaning
