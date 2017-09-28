@@ -32,6 +32,27 @@ $(document).ready(function() {
          else {
             $(".arrow-right").css('visibility', 'visible');
          }
+
+         if (newIndex == 4){
+            $('.count').each(function () {
+             $(this).prop('Counter',0).animate({
+                 Counter: $(this).text()
+             }, {
+                 duration: 2000,
+                 easing: 'swing',
+                 step: function (now) {
+                    $(this).text(Math.ceil(now));
+                 }
+             });
+           });
+          }
+          else {
+             $(".arrow-right").css('visibility', 'visible');
+          }
+
+
+
+
          currentIndex = newIndex;
     }
 
@@ -45,9 +66,9 @@ $(document).ready(function() {
           $activeSlide = $next;
           $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
              $next = allSlides.eq(0) : $activeSlide.next();
-       }, 1500);
+       }, 3000);
     }
-    
+
     function move(newIndex) {
           var animateLeft, slideLeft;
 
@@ -88,7 +109,7 @@ $(document).ready(function() {
       var info = $(this).find('.infoRef').attr('title');
       var screenframe = $(this).find('.screenRef').attr('title');
       var isMobile = window.matchMedia("(max-width: 768px)").matches
-      
+
       $(".valve1").removeClass('pulse');
       $(this).find('.part').addClass('rotate');
       $('.active-fact').hide();
@@ -130,7 +151,7 @@ $(document).ready(function() {
       $(this).closest('.single-fact-container').hide();
       $('body').css('height', '100%');
    });
-  
+
    $.each($slides, function(index) {
           var $button = $('<button type="button" class="slide-btn">&bull;</button>');
           if (index === currentIndex) {
@@ -165,12 +186,16 @@ $(document).ready(function() {
           }
        });
 
-   $('.arrow-left').click(function(e) {
+       $('.arrow-left').click(function(e) {
           if (currentIndex > 0) {
              move(currentIndex - 1);
           }
-    });
-    
+       });
+
+
+
+
+
     window.onresize = function() {
       if ($(window).width() > 768) {
          $('body').css('height', '100%');

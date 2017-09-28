@@ -183,6 +183,10 @@ button:active, button:focus{
    display: none;
 }
 
+#screen4-mobile {
+margin: 0;
+}
+
 .screen-mobile h2, .screen h2 {
    color: #333333;
    font-size: 85%;
@@ -281,6 +285,8 @@ button:active, button:focus{
    display: none;
 }
 
+
+
 .fact4-graph .graph-separator {
    width: 30%;
 
@@ -296,6 +302,20 @@ button:active, button:focus{
    justify-content: space-between;
    width: 90%;
 }
+
+#counter {
+   height: 100%;
+   width: 80%;
+   border: 2px solid #ff6200;
+   border-radius: 10px;
+   display: inline-block;
+   font-size: 160%;
+   padding: 7% 2% 5% 2%;
+   text-align: center;
+   overflow: hidden;
+   margin:0 auto;
+}
+
 
 /*fact6*/
 .fact6-graph {
