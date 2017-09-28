@@ -1,3 +1,14 @@
+/*!
+ * Smoke.js is an modified version of:
+ *
+ * Smoke Particles - A PEN BY Loktar
+ * https://codepen.io/loktar00/pen/DJGbo?page=1&
+ *
+ * licensed under the MIT license.
+ *
+ */
+
+
 (function () {
   var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
   window.requestAnimationFrame = requestAnimationFrame;
