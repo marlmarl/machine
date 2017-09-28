@@ -69,6 +69,8 @@ button:active, button:focus {
    color: #FF6200;
 }
 
+/*INFOGRAPHIC*/
+
 .infographic-container {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -167,6 +169,7 @@ button:active, button:focus {
    cursor: pointer;
 }
 
+
 /*BELLY*/
 
 .fact-screen {
@@ -183,7 +186,6 @@ button:active, button:focus {
 
 
 /*belly screen for mobile*/
-
 .screen-mobile {
    width: 44%;
    height: 15%;
@@ -455,51 +457,11 @@ button:active, button:focus {
 
 .valve1 img {
    border-radius: 50%;
-   -webkit-box-shadow: 0 0 9px #333;
-           box-shadow: 0 0 9px #333;
-   -webkit-animation-name: glow;
-           animation-name: glow;
-   -webkit-animation-duration:1s;
-           animation-duration:1s;
-   -webkit-animation-iteration-count: infinite;
-           animation-iteration-count: infinite;
+   -webkit-box-shadow: 0 0 25px #ff6200;
+           box-shadow: 0 0 25px #ff6200;
 }
 
-@-webkit-keyframes glow {
-  from {
-     -webkit-box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     -webkit-appearance: none;
-  }
-  50% {
-     -webkit-box-shadow: 0 0 25px #ff6200; box-shadow: 0 0 25px #ff6200;
-     box-shadow: 0 0 25px #ff6200; box-shadow: 0 0 25px #ff6200;
-     -webkit-appearance: none;
-  }
-  to {
-     -webkit-box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     -webkit-appearance: none;
-  }
-}
 
-@keyframes glow {
-  from {
-     -webkit-box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     -webkit-appearance: none;
-  }
-  50% {
-     -webkit-box-shadow: 0 0 25px #ff6200; box-shadow: 0 0 25px #ff6200;
-     box-shadow: 0 0 25px #ff6200; box-shadow: 0 0 25px #ff6200;
-     -webkit-appearance: none;
-  }
-  to {
-     -webkit-box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     box-shadow: 0 0 9px #ffffff; box-shadow: 0 0 9px #ffffff;
-     -webkit-appearance: none;
-  }
-}
 
 .valve2 {
    top: 27%;
