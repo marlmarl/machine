@@ -1,19 +1,13 @@
-PRORITY:
-- whole pic loading
-- document.ready();
-- font-sizes chceck
-- animation cleaning
+Good to do have:
 
-
-
-
-Good to do
-- ux - better indication that the valves are clickable
 - focus outline
 - preloader?
 - code comments and cleaning
 - dry
-- validators
+- whole pic loading
+- document.ready();
+- font-sizes chceck
+- animation cleaning
 
 
 THINGS TO ASK THEM:
@@ -60,3 +54,5 @@ DONE:
 - improving the animation of indicators - start with the smoke
 - remove selection
 - remove arrows when not needed
+- ux - better indication that the valves are clickable
+- validators
