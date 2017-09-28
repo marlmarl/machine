@@ -455,14 +455,6 @@ button:active, button:focus {
            box-sizing: border-box;
 }
 
-.valve1 img {
-   border-radius: 50%;
-   -webkit-box-shadow: 0 0 25px #ff6200;
-           box-shadow: 0 0 25px #ff6200;
-}
-
-
-
 .valve2 {
    top: 27%;
 }
@@ -921,8 +913,8 @@ button:active, button:focus {
     transform: scale3d(1, 1, 1);
   }
   50% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
@@ -938,8 +930,8 @@ button:active, button:focus {
     transform: scale3d(1, 1, 1);
   }
   50% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
