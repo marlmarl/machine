@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 $('.slider').each(function() {
    var $this = $(this);
    var $group = $this.find('.slide-viewer');
@@ -79,4 +81,5 @@ $('.slider').each(function() {
          move(currentIndex - 1);
       }
    });
+});
 });
