@@ -35,6 +35,11 @@ h1, h2, h3 {
    font-family: INGMe, Arial, sans-serif;
    font-weight: bold;
    font-style: normal;
+   font-size: 15px;
+}
+
+p {
+   font-size: 15px;
 }
 
 /*ELEMENTS AND CLASSES*/
@@ -74,15 +79,12 @@ button:active, button:focus{
 .infographic-container {
    display: -webkit-box;
    display: -ms-flexbox;
-   display: -webkit-flex;
    display: flex;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
    -ms-flex-direction: row;
-   -webkit-flex-direction: row;
    flex-direction: row;
    -webkit-box-align: stretch;
-   -webkit-align-items: stretch;
    -ms-flex-align: stretch;
    align-items: stretch;
 }
@@ -100,23 +102,18 @@ button:active, button:focus{
    height:100%;
    overflow: hidden;
    display:-webkit-box;
-   display:-webkit-flex;
    display:-ms-flexbox;
    display:flex;
    -webkit-box-align: center;
-   -webkit-align-items: center;
        -ms-flex-align: center;
            align-items: center;
    -webkit-box-orient: horizontal;
    -webkit-box-direction: normal;
-   -webkit-flex-direction: row;
        -ms-flex-direction: row;
            flex-direction: row;
-   -webkit-justify-content: space-around;
-       -ms-flex-pack: distribute;
-           justify-content: space-around;
+   -ms-flex-pack: distribute;
+       justify-content: space-around;
 }
-
 
 .single-fact-container {
    display: none;
@@ -140,7 +137,6 @@ button:active, button:focus{
    top:12px;
    left:10px;
 }
-
 
 /*slider*/
 .slider-arrow {
@@ -182,7 +178,6 @@ button:active, button:focus{
    z-index: -1;
 }
 
-
 /*belly screen for mobile*/
 .screen-mobile {
    width: 44%;
@@ -192,7 +187,7 @@ button:active, button:focus{
    display: none;
 }
 
-.screen-mobile h4, .screen h4 {
+.screen-mobile h2, .screen h2 {
    color: #333333;
    font-size: 85%;
    line-height: 85%;
@@ -208,13 +203,11 @@ button:active, button:focus{
 .graph {
    display: -webkit-box;
    display: -ms-flexbox;
-   display: -webkit-flex;
    display: flex;
    width: 80%;
    margin: 0 auto;
    margin-top: 10%;
    -ms-flex-pack: distribute;
-   -webkit-justify-content: space-around;
    justify-content: space-around;
 }
 
@@ -262,7 +255,6 @@ button:active, button:focus{
 /*fact3*/
 .fact3-graph {
    -webkit-box-align: end;
-   -webkit-align-items: flex-end;
    -ms-flex-align: end;
    align-items: flex-end;
 }
@@ -275,7 +267,6 @@ button:active, button:focus{
    height:45px;
 }
 
-
 .bar {
    border-radius: 4px;
    background-color: #ff6200;
@@ -286,7 +277,6 @@ button:active, button:focus{
    animation-duration: 1s;
    -webkit-animation-iteration-count: 1;
    animation-iteration-count: 1;
-
 }
 
 
@@ -307,7 +297,6 @@ button:active, button:focus{
 .fact5-graph {
    -webkit-box-pack: justify;
    -ms-flex-pack: justify;
-   -webkit-justify-content: space-between;
    justify-content: space-between;
    width: 90%;
 }
@@ -316,14 +305,12 @@ button:active, button:focus{
 .fact6-graph {
    -webkit-box-pack: center;
    -ms-flex-pack: center;
-   -webkit-justify-content: center;
    justify-content: center;
    width: 70%;
 }
 
 
 /*INFOGRAPHIC MACHINE SIDE*/
-
 .machine-container {
    position: relative;
    top: 0;
@@ -470,7 +457,6 @@ button:active, button:focus{
    top: 60%;
 }
 
-
 .indicator-container {
    position: absolute;
    top: 29.7%;
@@ -479,7 +465,6 @@ button:active, button:focus{
 
 .indicator1 {
    left: 34.5%;
-
 }
 
 .indicator2 {
@@ -508,13 +493,11 @@ button:active, button:focus{
 
 /*MEDIA QUERIES*/
 
-
 @media screen and (max-width:768px) {
    .infographic-container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      -webkit-flex-direction: column;
       flex-direction: column;
    }
 
