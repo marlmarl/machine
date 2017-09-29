@@ -1,6 +1,5 @@
 CHANGES:
-- copy of fact 6
-Many traditional-style companies are now trying to build platform business models. ING believes a new platform giant could emerge in the internet of things, which could number 8.4 billion items by the end of the year.
+
 - Fact 4 is not easy to read  -> can we instead of ticker boxes have graphs with a percentage ( the first three graphs would be rather steep, whereas the last would be quite flat)
 Fact 4 right now: I would like to see the company name + number at the bottom both aligned to the left, but ignore if we switch to graphs.
 - Fact 5: instead of the number just sinking in, can it go up gradually, so it communicates the extreme high number
@@ -18,6 +17,7 @@ Looking at traffic from iPhone 6/7 screens (375x667) – it’s quite a consider
 
 
 GOOD TO HAVE:
+- start screen - image after resizing
 - focus outline
 - preloader?
 - code comments and cleaning

@@ -240,7 +240,7 @@ margin: 0;
 
 .graph-separator {
    height: 100%;
-   border: 2px solid transparent;
+   padding: 2px 0;
    border-radius: 15%;
 }
 
@@ -256,14 +256,14 @@ margin: 0;
    font-size: 24px;
    border: 2px solid transparent;
    border-radius: 5px;
-   line-height: 150%;
-   padding:0 3px;
+   line-height: 130%;
+   padding:0 2px;
 }
 
 
 
 .graph-separator p{
-   line-height: 150%;
+   line-height: 130%;
    font-size: 24px;
    padding:0;
    border: 2px solid transparent;
@@ -309,6 +309,9 @@ margin: 0;
 
 /*fact5*/
 
+.fact5-graph .orange-frame p{
+   animation-iteration-count: 0;
+}
 .counter {
    width: 80%;
    margin:0 auto;
