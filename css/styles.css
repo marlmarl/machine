@@ -125,6 +125,23 @@ button:active, button:focus{
    overflow-x:hidden;
 }
 
+.single-fact::-webkit-scrollbar {
+background: transparent;
+height: 10px;
+overflow: visible;
+width: 10px;
+}
+.single-fact::-webkit-scrollbar-thumb {
+background-color: rgba(0, 0, 0, 0.2);
+-webkit-border-radius:5px;
+}
+.single-fact::-webkit-scrollbar-thumb:hover{
+background-color: rgba(0, 0, 0, 0.6);
+}
+.single-fact::-webkit-scrollbar-corner {
+background: transparent;
+}
+
 .close-fact {
    display: none;
    float: right;
@@ -549,6 +566,8 @@ margin: 0;
       position: absolute;
       margin-top:-5%;
    }
+
+
 
    .machine-container {
       width: 100%;
