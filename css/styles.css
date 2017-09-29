@@ -128,11 +128,11 @@ button:active, button:focus{
 .single-fact::-webkit-scrollbar {
 background: transparent;
 height: 10px;
-overflow: visible;
-width: 10px;
+overflow: hidden;
+width: 12px;
 }
 .single-fact::-webkit-scrollbar-thumb {
-background-color: rgba(0, 0, 0, 0.2);
+background-color: rgba(0, 0, 0, 0.4);
 -webkit-border-radius:5px;
 }
 .single-fact::-webkit-scrollbar-thumb:hover{
@@ -233,7 +233,7 @@ margin: 0;
 
 .orange-frame {
    height: 100%;
-   width: 20%;
+/*   width: 20%;*/
    border: 2px solid #ff6200;
    border-radius: 15%;
    display: inline-block;
