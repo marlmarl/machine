@@ -1,5 +1,5 @@
 CHANGES:
-
+(fact4-screen-left)
 - Fact 4 is not easy to read  -> can we instead of ticker boxes have graphs with a percentage ( the first three graphs would be rather steep, whereas the last would be quite flat)
 Fact 4 right now: I would like to see the company name + number at the bottom both aligned to the left, but ignore if we switch to graphs.
 - Fact 5: instead of the number just sinking in, can it go up gradually, so it communicates the extreme high number
