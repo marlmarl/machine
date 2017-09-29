@@ -1,108 +1,105 @@
 $(document).ready(function() {
-    var currentIndex = 0;
-    var clicked = false;
-    var runSlides = false;
-    var $group = $('.slide-viewer').first();
-    var $slides = $('.single-fact-container');
-    var buttonArray = [];
+   var currentIndex = 0;
+   var clicked = false;
+   var runSlides = false;
+   var $group = $('.slide-viewer').first();
+   var $slides = $('.single-fact-container');
+   var buttonArray = [];
 
-    function changeActiveClasses(newIndex) {
-        buttonArray[currentIndex].removeClass('active');
-        buttonArray[newIndex].addClass('active');
-        $slides.eq(currentIndex).removeClass('active-fact');
-        $slides.eq(newIndex).addClass('active-fact');
-        $('.valvePart').removeClass('rotate');
-        $('.valvePart').eq(newIndex).addClass('rotate');
-        if (newIndex == 3){
-            if (!runSlides) {
-                bellySlides($('#screen4 .fact4slides'));
-                bellySlides($('#screen4-mobile .fact4-screen'));
-                runSlides = true;
-            }
-        }
-        if (newIndex == 0){
-            $(".arrow-left").css('visibility', 'hidden');
-        }
-        else {
-            $(".arrow-left").css('visibility', 'visible');
-        }
-        if (newIndex == 5){
-            $(".arrow-right").css('visibility', 'hidden');
+   function changeActiveClasses(newIndex) {
+      console.log(newIndex);
+      buttonArray[currentIndex].removeClass('active');
+      buttonArray[newIndex].addClass('active');
+      $slides.eq(currentIndex).removeClass('active-fact');
+      $slides.eq(newIndex).addClass('active-fact');
+      $('.valvePart').removeClass('rotate');
+      $('.valvePart').eq(newIndex).addClass('rotate');
+      if (newIndex == 3){
+         if (!runSlides) {
+            bellySlides($('#screen4 .fact4slides'));
+            bellySlides($('#screen4-mobile .fact4-screen'));
+            runSlides = true;
          }
-         else {
-            $(".arrow-right").css('visibility', 'visible');
-         }
+      }
+      if (newIndex == 0){
+         $(".arrow-left").css('visibility', 'hidden');
+      }
+      else {
+         $(".arrow-left").css('visibility', 'visible');
+      }
+      if (newIndex == 5){
+         $(".arrow-right").css('visibility', 'hidden');
+      }
+      else {
+         $(".arrow-right").css('visibility', 'visible');
+      }
+      if (newIndex == 4){
+         $('.count').each(function () {
+            $(this).prop('Counter',0).animate({
+               Counter: $(this).text()
+            }, {
+               duration: 2000,
+               easing: 'swing',
+               step: function (now) {
+                  $(this).text(Math.ceil(now));
+               }
+            });
+         });
+      }
 
-         if (newIndex == 4){
-            $('.count').each(function () {
-             $(this).prop('Counter',0).animate({
-                 Counter: $(this).text()
-             }, {
-                 duration: 2000,
-                 easing: 'swing',
-                 step: function (now) {
-                    $(this).text(Math.ceil(now));
-                 }
-             });
-           });
-          }
-          else {
-             $(".arrow-right").css('visibility', 'visible');
-          }
 
 
 
+      currentIndex = newIndex;
+   }
 
-         currentIndex = newIndex;
-    }
+   function bellySlides(allSlides) {
+      var $activeSlide = allSlides.eq(0);
+      $activeSlide.show();
+      var $next = $activeSlide.next();
+      var timer = setInterval(function() {
+         $next.fadeIn(2000);
+         $activeSlide.hide();
+         $activeSlide = $next;
+         $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
+         $next = allSlides.eq(0) : $activeSlide.next();
+      }, 3000);
+   }
 
-    function bellySlides(allSlides) {
-       var $activeSlide = allSlides.eq(0);
-       $activeSlide.show();
-       var $next = $activeSlide.next();
-       var timer = setInterval(function() {
-          $next.fadeIn(2000);
-          $activeSlide.hide();
-          $activeSlide = $next;
-          $next = (allSlides.last().index() == allSlides.index($activeSlide)) ?
-             $next = allSlides.eq(0) : $activeSlide.next();
-       }, 3000);
-    }
+   function move(newIndex) {
+      var animateLeft, slideLeft;
 
-    function move(newIndex) {
-          var animateLeft, slideLeft;
+      if ($group.is(':animated') || currentIndex === newIndex) {
+         return;
+      }
 
-          if ($group.is(':animated') || currentIndex === newIndex) {
-             return;
-          }
+      if (newIndex > currentIndex) {
+         slideLeft = '100%';
+         animateLeft = '-100%';
+      } else {
+         slideLeft = '-100%';
+         animateLeft = '100%';
+      }
 
-          if (newIndex > currentIndex) {
-             slideLeft = '100%';
-             animateLeft = '-100%';
-          } else {
-             slideLeft = '-100%';
-             animateLeft = '100%';
-          }
-
-          $slides.eq(newIndex).css({
-             left: slideLeft,
-             display: 'block'
-          });
-          $group.animate({
-             left: animateLeft
-          }, function() {
-             $slides.eq(currentIndex).css({
-                display: 'none'
-             });
-             $slides.eq(newIndex).css({
-                left: 0
-             });
-             $group.css({
-                left: 0
-             });
-             changeActiveClasses(newIndex);
-          });
-       }
+      $slides.eq(newIndex).css({
+         left: slideLeft,
+         display: 'block'
+      });
+      $group.animate({
+         left: animateLeft
+      }, function() {
+         $slides.eq(currentIndex).css({
+            display: 'none'
+         });
+         $slides.eq(newIndex).css({
+            left: 0
+         });
+         $group.css({
+            left: 0
+         });
+         changeActiveClasses(newIndex);
+      });
+   }
 
    $('.valve').click(function(e) {
       e.preventDefault();
@@ -153,50 +150,46 @@ $(document).ready(function() {
    });
 
    $.each($slides, function(index) {
-          var $button = $('<button type="button" class="slide-btn">&bull;</button>');
-          if (index === currentIndex) {
-             $button.addClass('active');
-          }
-          $button.on('click', function() {
-             move(index);
-          }).appendTo('.slide-buttons');
-          buttonArray.push($button);
+      var $button = $('<button type="button" class="slide-btn">&bull;</button>');
+      if (index === currentIndex) {
+         $button.addClass('active');
+      }
+      $button.on('click', function() {
+         move(index);
+      }).appendTo('.slide-buttons');
+      buttonArray.push($button);
    });
 
    $('.single-fact-container').swipe({
-          swipe: function(event, direction, distance, duration, fingerCount) {
-             if (direction === "left") {
-                if ((window.matchMedia("(max-width: 768px)").matches) && (currentIndex < ($slides.length-1))){
-                   move(currentIndex + 1);
-                }
-             }
-             if ((window.matchMedia("(max-width: 768px)").matches) && (direction === "right")) {
-                if (currentIndex > 0) {
-                   move(currentIndex - 1);
-                }
-             }
-          },
-          threshold: 100,
-          allowPageScroll:"auto"
+      swipe: function(event, direction, distance, duration, fingerCount) {
+         if (direction === "left") {
+            if ((window.matchMedia("(max-width: 768px)").matches) && (currentIndex < ($slides.length-1))){
+               move(currentIndex + 1);
+            }
+         }
+         if ((window.matchMedia("(max-width: 768px)").matches) && (direction === "right")) {
+            if (currentIndex > 0) {
+               move(currentIndex - 1);
+            }
+         }
+      },
+      threshold: 100,
+      allowPageScroll:"auto"
    });
 
    $('.arrow-right').click(function(e) {
-          if (currentIndex < ($slides.length-1)){
-             move(currentIndex + 1);
-          }
-       });
+      if (currentIndex < ($slides.length-1)){
+         move(currentIndex + 1);
+      }
+   });
 
-       $('.arrow-left').click(function(e) {
-          if (currentIndex > 0) {
-             move(currentIndex - 1);
-          }
-       });
+   $('.arrow-left').click(function(e) {
+      if (currentIndex > 0) {
+         move(currentIndex - 1);
+      }
+   });
 
-
-
-
-
-    window.onresize = function() {
+   window.onresize = function() {
       if ($(window).width() > 768) {
          $('body').css('height', '100%');
          $('.text-container').show();
