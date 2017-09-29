@@ -126,7 +126,6 @@ button:active, button:focus{
 .single-fact::-webkit-scrollbar {
    background: transparent;
    height: 10px;
-   overflow: hidden;
    width: 10px;
 }
 
@@ -215,7 +214,7 @@ button:active, button:focus{
    display: -ms-flexbox;
    display: flex;
    margin: 0 auto;
-   margin-top: 10%;
+   margin-top:11%;
    -ms-flex-pack: distribute;
    -webkit-box-pack: center;
            justify-content: center;
@@ -585,6 +584,10 @@ button:active, button:focus{
    }
    .hilton {
       margin-right: 10px;
+   }
+
+   .graph {
+      margin-top: 30px;
    }
 }
 
