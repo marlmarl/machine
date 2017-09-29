@@ -235,6 +235,7 @@ margin: 0;
    animation-timing-function: ease-in-out;
    -webkit-animation-iteration-count: 1;
    animation-iteration-count: 1;
+   font-size: 24px;
 }
 
 .graph-separator {
