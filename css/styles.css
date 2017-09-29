@@ -369,6 +369,11 @@ button:active, button:focus{
    height: 100%;
 }
 
+.touch {
+   width:105%;
+   height:105%;
+}
+
 .machine-body-img {
    margin: 0 auto;
    display: block;
